@@ -1,0 +1,247 @@
+[
+  {
+    "id": 10001,
+    "skilltype": 1,
+    "link": 2,
+    "active": 1,
+    "target": 1,
+    "time": "5",
+    "text": "key_10201",
+    "num": 50
+  },
+  {
+    "id": 10002,
+    "skilltype": 1,
+    "link": 2,
+    "active": 1,
+    "target": 2,
+    "time": "5",
+    "text": "key_10202",
+    "num": 75,
+    "attacklength": 50
+  },
+  {
+    "id": 10003,
+    "skilltype": 1,
+    "link": 2,
+    "active": 1,
+    "target": 1,
+    "text": "key_10203"
+  },
+  {
+    "id": 10004,
+    "skilltype": 2,
+    "link": 2,
+    "active": 1,
+    "target": 1,
+    "time": "5",
+    "text": "key_10204"
+  },
+  {
+    "id": 10005,
+    "skilltype": 1,
+    "link": 2,
+    "active": 1,
+    "target": 1,
+    "time": "5,10",
+    "text": "key_10205"
+  },
+  {
+    "id": 10006,
+    "skilltype": 1,
+    "link": 2,
+    "active": 1,
+    "target": 2,
+    "time": "3",
+    "text": "key_10206",
+    "attacklength": 50
+  },
+  {
+    "id": 10007,
+    "skilltype": 1,
+    "link": 2,
+    "active": 1,
+    "target": 2,
+    "time": "5",
+    "text": "key_10207",
+    "attacklength": 30
+  },
+  {
+    "id": 10008,
+    "skilltype": 2,
+    "link": 2,
+    "active": 1,
+    "target": 2,
+    "time": "5",
+    "text": "key_10208",
+    "attacklength": 30
+  },
+  {
+    "id": 10009,
+    "skilltype": 1,
+    "link": 2,
+    "active": 1,
+    "target": 2,
+    "text": "key_10209"
+  },
+  {
+    "id": 10010,
+    "skilltype": 1,
+    "link": 3,
+    "active": 1,
+    "target": 2,
+    "text": "key_10210"
+  },
+  {
+    "id": 10011,
+    "skilltype": 2,
+    "link": 2,
+    "active": 1,
+    "target": 2,
+    "text": "key_10211"
+  },
+  {
+    "id": 10012,
+    "skilltype": 2,
+    "link": 2,
+    "active": 1,
+    "target": 1,
+    "time": "30",
+    "text": "key_10212"
+  },
+  {
+    "id": 10013,
+    "skilltype": 2,
+    "link": 3,
+    "active": 1,
+    "target": 1,
+    "text": "key_10213"
+  },
+  {
+    "id": 10014,
+    "skilltype": 2,
+    "link": 3,
+    "active": 1,
+    "target": 1,
+    "text": "key_10214"
+  },
+  {
+    "id": 10015,
+    "skilltype": 2,
+    "link": 2,
+    "active": 1,
+    "target": 2,
+    "time": "60",
+    "text": "key_10215"
+  },
+  {
+    "id": 10016,
+    "skilltype": 2,
+    "link": 3,
+    "active": 1,
+    "target": 1,
+    "text": "key_10216"
+  },
+  {
+    "id": 10017,
+    "skilltype": 2,
+    "link": 3,
+    "active": 1,
+    "target": 2,
+    "text": "key_10217"
+  },
+  {
+    "id": 10018,
+    "skilltype": 2,
+    "link": 1,
+    "active": 1,
+    "target": 2,
+    "text": "key_10218"
+  },
+  {
+    "id": 10019,
+    "skilltype": 2,
+    "link": 2,
+    "active": 1,
+    "target": 2,
+    "text": "key_10219",
+    "attacklength": 10
+  },
+  {
+    "id": 10101,
+    "skilltype": 3,
+    "link": 2,
+    "active": 2,
+    "target": 1,
+    "text": "key_10220"
+  },
+  {
+    "id": 10102,
+    "skilltype": 3,
+    "link": 2,
+    "active": 1,
+    "target": 2,
+    "text": "key_10221"
+  },
+  {
+    "id": 10103,
+    "skilltype": 3,
+    "link": 2,
+    "active": 1,
+    "target": 2,
+    "time": "15",
+    "text": "key_10222",
+    "attacklength": 30
+  },
+  {
+    "id": 10104,
+    "skilltype": 3,
+    "link": 3,
+    "active": 1,
+    "target": 2,
+    "text": "key_10223"
+  },
+  {
+    "id": 10105,
+    "skilltype": 3,
+    "link": 3,
+    "active": 1,
+    "target": 2,
+    "text": "key_10224"
+  },
+  {
+    "id": 10106,
+    "skilltype": 1,
+    "link": 2,
+    "active": 1,
+    "target": 2,
+    "time": "3",
+    "text": "key_10225",
+    "attacklength": 30
+  },
+  {
+    "id": 10107,
+    "skilltype": 2,
+    "link": 2,
+    "active": 1,
+    "target": 1,
+    "text": "key_10226",
+    "attacklength": 30
+  },
+  {
+    "id": 10108,
+    "skilltype": 2,
+    "link": 2,
+    "active": 2,
+    "target": 1,
+    "text": "key_10227"
+  },
+  {
+    "id": 10109,
+    "skilltype": 2,
+    "link": 2,
+    "active": 1,
+    "target": 1,
+    "text": "key_10228"
+  }
+]

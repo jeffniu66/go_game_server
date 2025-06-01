@@ -1,0 +1,68 @@
+syntax = "proto3";
+
+import "enumtype.proto";
+
+package proto3;
+
+// -------------------------------------------------------
+//                      测试协议
+//  封包格式：包头 + 包体    包头8个字节，协议号cmd 4个字节，包体长度2个字节，预留2个字节
+// -------------------------------------------------------
+
+/*
+// 服务器主动通知资源变化
+message PushChangeAttr {
+    repeated AttrChange attrList = 1;   // 玩家资源变化
+}
+
+// 服务器主动通知增量资源变化
+message PushIncAttr {
+    repeated AttrChange attrList = 1;   // 玩家资源变化
+}
+
+message MarkPoint{
+    int32 Index         = 1;    // 逻辑坐标（地块id）
+    int32 ReferId       = 2;    // referId
+    string LandName     = 3;    // 地块名字
+    int32 Time          = 4;    // 标记时间戳
+    int32 MarkType      = 5;    // 标记类型
+}
+
+// 走马灯
+message PushNotice{
+    int32 noticeId         = 1;    // 配置表通知id
+    repeated string params = 2;    // 参数列表
+    string content         = 3;    // 自定义内容
+}
+
+// 推送红点
+message PushRedPoint {
+    RedEnum point     = 1;         // 红点枚举
+    int32 num         = 2;         // 红点个数
+}
+
+message BattleMsgWrapper {
+	int32 BattleMsgId			= 1;	//消息ID
+	bytes	BattleMsg			= 2;	//消息内容
+}
+*/
+
+// 心跳请求
+message HeartBeatReq {}
+
+// 心跳请求
+message HeartBeatResp {
+    int32 server_sec = 1;
+}
+
+// 服务端和客户端交互统一的错误码提示消息
+message ErrResp {
+//    ProtoCmd cmd = 1;
+    ErrEnum err_code = 1;
+    string err_msg = 2;
+}
+enum CommonStatusEnum {
+    pass = 0; // 通过或无效
+    true = 1; // 成功
+    false = 2; // 失败
+}

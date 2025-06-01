@@ -1,0 +1,59 @@
+syntax = "proto3";
+package proto3;
+import "enumtype.proto";
+import "common.proto";
+
+
+// 聊天请求
+message GameChatReq {
+  int32 quick_type = 1; // 1-quick 其他-文本
+  string chat_data = 2;
+  int32 quick_id = 3;   // quick_id
+}
+
+// 聊天返回
+message GameChatResp {
+  int32 user_id = 1;
+  string chat_data = 2;
+  int32 quick_type = 3;          // 1-quick 其他-文本
+  int32 quick_id = 4;            // quick_id
+  repeated string subs_text = 5; // 文本替换
+}
+
+// 候场聊天请求
+message WaitGameChatReq {
+  int32 quick_type = 1; // 1-quick 其他-文本
+  string chat_data = 2;
+  int32 quick_id = 3;   // 1-quick_id
+}
+// 候场聊天返回
+message WaitGameChatResp {
+  int32 user_id = 1;
+  string chat_data = 2;
+  int32 quick_type = 3; // 1-quick 其他-文本
+  int32 quick_id = 4;   // 1-quick_id
+}
+
+message GmChatReq {
+  string msg = 1; // gmcommond#param1#...#paramn eg.all_roomm#
+}
+
+message GmChatResp {
+  CommonStatusEnum statis = 1;  // 1-成功
+  string response = 2;          // 返回内容字符串
+}
+
+message HomeChatReq {
+    string chat_data = 1;
+}
+
+message HomeChatResp {
+    ChatTypeEnum chat_type = 1;     // 类型
+    string chat_data = 2;           // 内容
+    int32 user_id = 3;              // 用户
+    int32 user_photo = 4;           // 头像
+    string username=5;              // 用户名
+    int32 quick_type = 6;           // 1-quick 其他-文本
+    int32 quick_id = 7;             // quick_id
+    repeated string subs_text = 8;  // 文本替换
+}

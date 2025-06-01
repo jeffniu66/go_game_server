@@ -1,0 +1,291 @@
+syntax = "proto3";
+
+import "enumtype.proto";
+import "common.proto";
+import "mission_common.proto";
+
+package proto3;
+
+enum MatchEnum {
+    invalid_match = 0;
+    enter_match = 1;    // 加入匹配
+    quit_match = 2;     // 退出匹配
+}
+
+enum PlayerRoleEnum {
+    invalid_role = 0;
+    wolf_man = 1;       // 狼人
+    comm_people = 2;    // 平民
+}
+
+enum PlayerGameStatus {
+    invalid_status = 0;
+    normal = 1;       // 正常
+    killed = 2;       // 被杀死
+    killed_vote = 3;  // 被票杀
+}
+
+enum RoomStatus {
+    default_status = 0;
+    wait_game = 1;      // 候场中
+    gameing = 2;        // 游戏中
+    voting = 3 ;        // 投票中
+    game_settle = 4;    // 结算中
+    game_end = 5;       // 游戏
+}
+
+enum VoteStepEnum {
+    step_pass = 0;
+    vote_chat = 1;  // 投票前聊天
+    vote_in = 2;    //投票中
+    vote_end = 3;   // 投票结束
+}
+
+enum VoteStatus {
+    invalid_vote = 0;       // 无效的投票
+    valid_vote = 1;         // 有效的投票
+    invalid_no_helf = 2;    // 投票人数不过半
+    invalid_equal_vote =3;  // 平票
+}
+
+// 客户端点匹配
+message EnterMatchReq {
+    MatchEnum key = 1;            // 操作枚举
+    CommonStatusEnum is_only = 2; // 0-不是，1-是
+}
+// 客户端点匹配
+message EnterMatchErrorResp {
+    ErrEnum err_code = 1;
+    string err_msg = 2;
+}
+
+enum OnOff {
+    invalid = 0; // 无效状态
+    on = 1;      // 开
+    off = 2;     // 关
+}
+
+message Roommate {
+    int32 user_id = 1;
+    string username = 2;
+    PlayerRoleEnum player_role = 3;             // 0-平民，1-狼人
+    PlayerGameStatus player_game_status = 4;    // 玩家状态
+    int32 kill_num = 5;                         // 击杀人数
+    int32 birth_point = 6;                      // 出生点
+    int32 turn_index = 7;                       // 第几轮被杀
+    int32 user_skin = 8;                        // 使用皮肤
+    int32 user_photo = 9;                       // 使用头像
+    int32 user_title = 10;                      // 用户称号
+    int32 is_robot = 11;                        // 是否是机器人 1-是机器人
+    string open_id = 12;                        // 用户唯一标识
+    repeated OnOff skill_on_off = 13;           // 技能栏位开关[栏位2, 栏位3]
+}
+
+// 房间状态
+message RoomInfoResp {
+    RoomStatus room_status = 1;
+    int32 turn_index = 2;           // 游戏当前伦数
+    int64 game_wait_end_time = 3;   // 候场结束时间
+    int64 vote_chat_end_time = 4;   // delete 投票聊天结束时间 --该阶段未使用
+    int64 vote_end_time = 5;        // 投票结束时间
+    int64 vote_sum_end_time = 6;    // 投票总结结束时间
+    int64 server_current_time = 7;  // 服务器当前时间
+    VoteStepEnum vote_step = 8;     // 投票阶段
+    CommonStatusEnum is_only = 9;   // 0-不是，1-是
+}
+
+message SkillInfo{
+    int32 boomUserId = 1; // 被自爆符过的玩家id
+}
+
+message WolfManCd {
+    int32 user_id = 1;
+    int32 cd_end_time = 2; // 狼人杀人CD结束时间
+}
+
+// 进入房间成功后,返回出生点 断线重连返回
+message EnterRoomResp {
+    TaskInfo task_info = 1;             // 任务位置点
+    repeated Roommate roommate= 2;      // 成員角色
+    RoomInfoResp room_info_resp = 3;    
+    VoteResultResp vote_result = 4;         // 投票中信息返回
+    SkillInfo skill_info = 5;               // 技能相关信息
+    int32 room_id = 6;                      // 房间id
+    repeated TaskInfo ai_task = 7;          // AI任务点
+    int32 urgency_vote_num = 8;             // 紧急会议次数
+    int32 urgency_vote_time = 9;            // 紧急解冻时间
+    repeated WolfManCd wolf_man_cd = 10;    // 狼人杀人CD
+    repeated UserLamp lamp_list = 11;       // 玩家监控室开关
+}
+
+message TaskInfo {
+    repeated int32 task_point = 1;          // 分配的任务位置点
+    repeated int32 finish_point = 2;        // 已完成的点
+    int32 total_score = 3;                  // 总分数
+    repeated int32 urgency_task_point = 4;  // 分配的紧急任务位置点
+    UrgencyTaskResp urgencyTaskResp = 5;
+    int32 user_id = 6; // user_id 记录AI任务
+    int32 skill = 7; // 玩家身上技能id
+}
+
+// 游戏开始返回
+message BeginGameResp {
+    RoomInfoResp room_info_resp = 1;    // 游戏开始
+    repeated Roommate roommate= 2;      // 成員角色
+}
+
+// 攻击请求
+message NinjaAttackReq {
+    int32 sufferer_id = 1; // 受害人
+    int32 user_id = 2;     // 攻击者
+}
+
+message NinjaAttackResp {
+    int32 user_id = 1;                  // 攻击者
+    int32 sufferer_id = 2;              // 被攻击者
+    CommonStatusEnum ninja_status = 3;  // 攻击状态
+}
+// 发起投票
+message StartVoteReq {
+    int32 user_id = 1;              // 发起人user_id
+    int32 sufferer_id = 2;          // 被投票人user_id
+    VoteTypeEnum vote_type = 3;     // 0-正常发起投票 1-紧急会议
+}
+
+// 发起投票返回
+message StartVoteResp {
+    int32 user_id = 1;              // 发起者
+    int32 sufferer_id = 2;          // 被投票人user_id
+    repeated Roommate Roommate = 3;
+    RoomInfoResp room_info_resp = 4;
+    VoteTypeEnum vote_type = 5;     // 0-正常发起投票 1-紧急会议
+    int32 turn_vote_num = 6;        // 投票次数
+}
+
+// 玩家投票
+message PlayerVoteReq{
+    int32 vote_user_id = 1;         // 被投票人user_id列表
+    CommonStatusEnum status = 2;    // 2-弃票 1-投票
+}
+
+// 玩家投票結束返回 
+message PlayerVoteResp {
+    int32 user_id = 1;              // 谁进行了投票
+    ErrEnum err_code = 2;           // 1-成功
+    CommonStatusEnum status = 3;    // 2-弃票 1-投票
+}
+
+message VotedUserList {
+    int32 user_id = 1;  // 投票用户
+    int32 vote_num = 2; // 投票数量
+}
+
+// 玩家投票获得数
+message PlayerGainVote {
+    int32 user_id = 1; // 被投票人
+    repeated VotedUserList vote_user_list = 2;
+}
+
+message VoteStepResp {
+    VoteStepEnum vote_step = 1;
+    int64 server_current_time = 2;  // 服务器当前时间
+    int64 step_end_time = 3;        // 当前阶段结束时间
+}
+
+// 投票结果
+message VoteResultResp {
+    VoteStatus vote_status = 1;                         // 本轮投票状态
+    int32 user_id = 2;                                  // 发现人
+    int32 sufferer_id = 3;                              // 昏迷者
+    int32 kill_user_id = 4;                             // 票死的用户
+    int32 vote_number = 5;                              // 得票数
+    repeated PlayerGainVote player_gain_vote_list = 6;  // 投票详情
+    repeated int32 user_vote_list = 7;                  // 已投票者
+    repeated int32 lose_vote_list = 8;                  // 弃票者
+}
+
+// 投票关闭
+message VoteCloseResp {
+    CommonStatusEnum status = 1; // 1-成功 其他失败
+}
+
+// 玩家退出
+message PlayerExitReq {
+}
+
+// 玩家退出返回
+message PlayerExitResp {
+    ErrEnum err_code = 1;
+}
+
+// 游戏结束-平民返回
+message GameEndResp {
+    PlayerRoleEnum game_win_role = 1;   // 胜利角色 0-平局
+    int32 vote_count = 2;               // 投票总次数
+    // 平民特有数据
+    int32 vote_num = 3;             // 投票成功次数
+    int32 all_task_num = 4;         // 整体任务个数
+    int32 all_tasked_num = 5;       // 整体任务完成个数
+    int32 private_task_num = 6;     // 个人任务总数
+    int32 private_tasked_num = 7;   // 个人任务完成
+    // 狼人特有数据
+    int32 hide_num = 8;     // 投票躲避次数
+    int32 kill_num = 9;     // 击杀人数
+    int32 break_num = 10;   // 破坏任务数
+
+    int32 user_id = 11;                         // 玩家id
+    PlayerRoleEnum player_role = 12;            // 玩家角色
+    int32 chat_num = 13;                        // 玩家发言数
+    PlayerGameStatus player_game_status = 14;   // 玩家状态
+    int32 score = 15;                           // 评分
+    string rewards = 16;                        // 奖励 1,50|2,50
+}
+
+message GameDetailResp {
+    repeated GameEndResp player_detail = 1;
+}
+
+// 关门请求
+message CloseDoorReq {
+    int32 door_id = 1; // 门id
+}
+
+// 关门响应
+message CloseDoorResp {
+    ErrEnum err_code = 1;
+    int32 door_id = 2;      // 门id
+    int64 cd_end_time = 3;  // 狼人CD结束时间
+}
+
+// 公用文字提示
+message CommonTextNotice {
+    string text_key = 1;
+    string param = 2; // 文本中参数 格式：参数1,参数2
+}
+
+// 通风口请求
+message OpenWindReq {
+    int32 wind_id = 1; // 通风口id
+}
+
+// 通风口响应
+message OpenWindResp {
+    ErrEnum err_code = 1;
+    int32 wind_id = 2;      // 通风口id
+}
+
+// 监控室开关
+message UserLamp {
+    int32 user_id = 1;
+    CommonStatusEnum status = 2; // 监控室开关 0-关闭，1-打开
+}
+
+message LampSwitchReq {
+    int32 user_id = 1;
+    CommonStatusEnum status = 2; // 监控室开关 0-关闭，1-打开
+}
+
+message LampSwitchResp {
+    int32 user_id = 1;
+    CommonStatusEnum status = 2; // 监控室开关 0-关闭，1-打开
+}

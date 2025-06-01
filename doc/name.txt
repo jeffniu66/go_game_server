@@ -1,0 +1,97 @@
+命名最重要的三点：
+
+1.文件命名
+	文件命名一律采用小写，不用驼峰式，尽量见名思义，看见文件名就可以知道这个文件下的大概内容。
+	允许加下划线‘_’组合方式，但是头尾不能为下划线。
+
+建议：
+	stringutil.go,	string_util.go
+
+不建议：
+	stringUtil.go,	Stringutil.go
+
+2.方法接收者
+	接收者名不要使用me，this 或者 self 这种泛指的名字。
+	Don't use generic names such as "me", "this" or "self", identifiers typical of object-oriented languages that
+	place more emphasis on methods as opposed to functions.
+
+建议：
+	func (p *Player) SetCityLevel(id int32) {
+	}
+
+不建议：
+	func (self *Player) SetCityLevel(id int32) {
+	}
+
+3.变量名
+	驼峰形式，而且尽量要短而精：
+	所谓短小，不必多言，当命名过长的时候，读者可能更关注命名本身，而忽视真正的逻辑内容。
+	所谓精确，就是命名达意、易于理解
+	Variable names in Go should be short rather than long.
+
+
+ps:protobuff的命名(项目里很多是不规范的)
+结构体命名是首字母大写驼峰形式，里面变量是全都是小写，加下划线‘_’组合方式
+
+建议：
+	message BuildObj {
+		int32 id               = 1;            // 建筑id(唯一id)
+		int32 level_time       = 2;            // 升级完成时间戳，默认为0
+		int32 produce_time     = 3;            // 产出开始时间戳
+	}
+
+不建议：
+	message BuildObj {
+		int32 Id               = 1;            // 建筑id(唯一id)
+		int32 LevelTime        = 2;            // 升级完成时间戳，默认为0
+		int32 ProduceTime      = 3;            // 产出开始时间戳
+	}
+
+
+可以参考go里面的标准库，如何规范命名，例如net.go
+https://github.com/golang/go/wiki/CodeReviewComments
+
+
+## 目录结构
+slg_game_server/
+├── config  - 游戏配置表
+│   ├── dataConfig  - proto转为go文件
+│   └── protoConfig – 配置表结构proto和内容bytes文件
+├── proto - 协议配置
+│   └── pri
+├── script - 工具脚本，启动、转协议、导数据库表等等
+├── server - 服务器相关
+│   ├── cfg - 配置表读取接口
+│   ├── db - 各个模块数据库操作接口
+│   ├── game - 模块数据，玩家信息、背包等等
+│   ├── global -全局的数据
+│   ├── goredis - redis客户端对象
+│   ├── handler - 业务逻辑，协议入口
+│   ├── include - 公用文件，相关常量等等
+│   ├── logger - 日志输出
+│   ├── network - 网络相关
+│   ├── rabbitmq – 消息队列
+│   ├── util – 工具类
+│   └── main.go - 程序入口
+├── sql - mysql表
+├── test
+└── vendor - 库目录
+    └── github.com
+        ├── gogo
+        │   └── protobuf
+        │       └── proto
+        ├── goinggo
+        │   └── mapstructure
+        ├── golang
+        │   └── protobuf
+        │       └── proto
+        ├── go-redis
+        │   └── redis
+        ├── go-sql-driver
+        │   └── mysql
+        ├── pkg
+        │   └── errors
+        └── tealeg
+            └── xlsx
+
+

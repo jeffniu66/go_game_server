@@ -1,0 +1,73 @@
+[
+  {
+    "guideid": 1,
+    "guidecondition": 1,
+    "guideword": "key_3201",
+    "record": 1,
+    "posy": 50,
+    "use": 0
+  },
+  {
+    "guideid": 2,
+    "guidecondition": 2,
+    "guideword": "key_3202",
+    "record": 1,
+    "posy": -470,
+    "use": 0
+  },
+  {
+    "guideid": 3,
+    "guidecondition": 3,
+    "guideword": "key_3203",
+    "record": 1,
+    "posy": -125,
+    "use": 0
+  },
+  {
+    "guideid": 4,
+    "guidecondition": 4,
+    "guideword": "key_3204",
+    "record": 1,
+    "posy": 0,
+    "use": 0
+  },
+  {
+    "guideid": 5,
+    "guidecondition": 5,
+    "guideword": "key_3205",
+    "record": 1,
+    "posy": 0,
+    "use": 0
+  },
+  {
+    "guideid": 6,
+    "guidecondition": 6,
+    "guideword": "key_3206",
+    "record": 1,
+    "posy": 0,
+    "use": 0
+  },
+  {
+    "guideid": 7,
+    "guidecondition": 4,
+    "guideword": "key_3207",
+    "record": 1,
+    "posy": 0,
+    "use": 0
+  },
+  {
+    "guideid": 8,
+    "guidecondition": 6,
+    "guideword": "key_3208",
+    "record": 1,
+    "posy": 0,
+    "use": 0
+  },
+  {
+    "guideid": 9,
+    "guidecondition": 7,
+    "record": 1,
+    "posy": 0,
+    "use": 0
+  }
+]

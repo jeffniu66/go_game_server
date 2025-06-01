@@ -1,0 +1,62 @@
+syntax = "proto3";
+
+package proto3;
+
+enum FSPCmd {
+    CMD_NON = 0;    // 默认
+    CMD_IDLE = 1;   // 待机
+    CMD_WALK = 2;   // 移动
+    CMD_ATTACK = 3; // 攻击
+    CMD_BURROW = 4; // 遁地
+    CMD_DOMISSION = 5; // 执行任务
+    CMD_SKILL = 6;  // 技能
+    CMD_DOOR  = 7;  // 门
+    CMD_URGENTTASK  = 8;  // 紧急任务
+}
+
+enum FSPS2CDataType {
+    TYPE_NON = 0;   // 默认
+    TYPE_START = 1; // 帧开始
+    TYPE_FRAME = 2; // 帧数据
+}
+
+// 上行消息命令参数
+message FSPCmdArgs {
+    int32 x = 1; // x坐标
+    int32 y = 2; // y坐标
+    int32 dir = 3; // 朝向，当前为左右朝向，-1左，1右
+    uint32 uId = 4; // 被攻击uid
+    uint32 skillId = 5; // 技能id
+    int32 inout = 6; // 出入 -1入，1出
+}
+
+// 上行消息
+message FSPMsg {
+    uint32 uId = 1; // 玩家ID
+    FSPCmd cmd = 2; // 操作命令
+    FSPCmdArgs args = 3; // 命令参数
+    uint32 clientFrameId = 4; // 客户端frameId 测试
+
+}
+
+// 上行数据
+message FSPC2SDataReq {
+    repeated FSPMsg msgs = 2; // 上行消息列表
+}
+
+// 下行分帧
+message FSPFrameResp {
+    uint32 frameId = 1; // 帧ID
+    repeated FSPMsg msgs = 2; // 上行消息列表
+}
+
+// 下行数据
+message FSPS2CData {
+//    FSPS2CDataType type = 1;
+//    repeated FSPFrame msgs = 2; // 下行分帧列表
+}
+
+// 重连历史帧数据返回
+message HisFSPFrameResp {
+    repeated FSPFrameResp hisFSPFrameList = 1;
+}

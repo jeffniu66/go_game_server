@@ -1,0 +1,932 @@
+{
+    "root": {
+        "data": {
+            "id": "c7n8516euow0",
+            "created": 1607412397455,
+            "text": "ninja_game"
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "c7n85dg0r6o0",
+                    "created": 1607412424157,
+                    "text": "段位匹配",
+                    "layout_mind_offset": {
+                        "x": -40,
+                        "y": 6
+                    }
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c7n85myemx40",
+                            "created": 1607412444860,
+                            "text": "enterRankMatch",
+                            "layout_right_offset": {
+                                "x": -3,
+                                "y": -14
+                            }
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c7n863wzchs0",
+                                    "created": 1607412481779,
+                                    "text": "达到数量",
+                                    "layout_right_offset": {
+                                        "x": 27,
+                                        "y": 304
+                                    }
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c7n86g54gv40",
+                                            "created": 1607412508393,
+                                            "text": "进入房间",
+                                            "layout_right_offset": {
+                                                "x": 309,
+                                                "y": -17
+                                            }
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c7n865zap2w0",
+                                    "created": 1607412486273,
+                                    "text": "mergeRankReq 发送合并段位的请求",
+                                    "layout_right_offset": {
+                                        "x": -1,
+                                        "y": 15
+                                    }
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c7n8a6fbwyw0",
+                                    "created": 1607412800699,
+                                    "text": "mergeRankResp 合并段位请求返回",
+                                    "layout_right_offset": {
+                                        "x": 14,
+                                        "y": 50
+                                    }
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c7n8adqusds0",
+                                            "created": 1607412816633,
+                                            "text": "enterRankMatch",
+                                            "layout_right_offset": {
+                                                "x": 111,
+                                                "y": -32
+                                            }
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c8pdenxr1u80",
+                                    "created": 1611286536178,
+                                    "text": "按渠道区分",
+                                    "layout_right_offset": {
+                                        "x": 9,
+                                        "y": -393
+                                    }
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c8pdf151q000",
+                                            "created": 1611286564917,
+                                            "text": "oppo",
+                                            "layout_right_offset": {
+                                                "x": 10,
+                                                "y": -88
+                                            }
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c8pdfw9ota00",
+                                                    "created": 1611286632678,
+                                                    "text": "list",
+                                                    "layout_right_offset": {
+                                                        "x": -5,
+                                                        "y": -36
+                                                    }
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "c8pdfz62oko0",
+                                                    "created": 1611286638990,
+                                                    "text": "mergeNum"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "c8pdf68aqoo0",
+                                            "created": 1611286575998,
+                                            "text": "wx",
+                                            "layout_right_offset": {
+                                                "x": 20,
+                                                "y": -25
+                                            }
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c8pdg2uw8g80",
+                                                    "created": 1611286647021,
+                                                    "text": "list",
+                                                    "layout_right_offset": {
+                                                        "x": -3,
+                                                        "y": -47
+                                                    }
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "c8pdg6hvq800",
+                                                    "created": 1611286654941,
+                                                    "text": "merge",
+                                                    "layout_right_offset": {
+                                                        "x": 1,
+                                                        "y": -7
+                                                    }
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c7n8bfy0fc80",
+                            "created": 1607412899784,
+                            "text": "mergeRankTimer",
+                            "layout_right_offset": {
+                                "x": 11,
+                                "y": 118
+                            }
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c7n8c8ab7q00",
+                                    "created": 1607412961478,
+                                    "text": "sendMergeRankTimer 请求机器人 匹配时间大于30秒",
+                                    "layout_right_offset": {
+                                        "x": -3,
+                                        "y": -47
+                                    }
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c7n8crcugf40",
+                                    "created": 1607413002990,
+                                    "text": "nextMergeRank 向下一段位请求",
+                                    "layout_right_offset": {
+                                        "x": 20,
+                                        "y": -5
+                                    }
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c7n8fjat28g0",
+                                            "created": 1607413220545,
+                                            "text": "mergeRankReq"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c7n8d0h71oo0",
+                                    "created": 1607413022844,
+                                    "text": "preMergeRank 向上一段位请求",
+                                    "layout_right_offset": {
+                                        "x": 29,
+                                        "y": 21
+                                    }
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c7n8fofi23k0",
+                                            "created": 1607413231712,
+                                            "text": "mergeRankReq"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c7n9mt55epc0",
+                    "created": 1607416611629,
+                    "text": "连续数据保存",
+                    "layout_mind_offset": {
+                        "x": -71.749999273568,
+                        "y": 240.24999834224553
+                    }
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c7n9naqkf200",
+                            "created": 1607416649930,
+                            "text": "本次真",
+                            "layout_right_offset": {
+                                "x": 204.99999694526207,
+                                "y": -43.7499993480742
+                            }
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c7n9nmsj44g0",
+                                    "created": 1607416676170,
+                                    "text": "在原数值+1",
+                                    "layout_right_offset": {
+                                        "x": 31.249999534338826,
+                                        "y": 2.499999962747097
+                                    }
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c7n9o2pkaio0",
+                            "created": 1607416710819,
+                            "text": "本次假",
+                            "layout_right_offset": {
+                                "x": 192.49999713152636,
+                                "y": 61.24999908730422
+                            }
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c7n9o7jp1ls0",
+                                    "created": 1607416721348,
+                                    "text": "原数值归0",
+                                    "layout_right_offset": {
+                                        "x": 137.49999795108965,
+                                        "y": 1.2499999813736622
+                                    }
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c7nvw9rllnk0",
+                    "created": 1607479417511,
+                    "text": "执行逻辑",
+                    "layout_mind_offset": {
+                        "x": -34.99999947845936,
+                        "y": 281.24999849125743
+                    }
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c7nvwpx74xs0",
+                            "created": 1607479452678,
+                            "text": "初始化",
+                            "layout_left_offset": {
+                                "x": -42,
+                                "y": -98
+                            }
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c7nvwz4hf3s0",
+                                    "created": 1607479472709,
+                                    "text": "db、log、config",
+                                    "layout_left_offset": {
+                                        "x": 5,
+                                        "y": -92
+                                    }
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c7nvxaj0jdc0",
+                                    "created": 1607479497533,
+                                    "text": "MatchMrg",
+                                    "layout_left_offset": {
+                                        "x": -18,
+                                        "y": -75
+                                    }
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c7nvzsvockg0",
+                                    "created": 1607479694209,
+                                    "text": "webSocket",
+                                    "layout_left_offset": {
+                                        "x": -8,
+                                        "y": -34
+                                    }
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c7nw017zvz40",
+                            "created": 1607479712368,
+                            "text": "conn（client）",
+                            "layout_left_offset": {
+                                "x": -6,
+                                "y": 7
+                            }
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c7nw0h81a800",
+                                    "created": 1607479747199,
+                                    "text": "readserver（pid）",
+                                    "layout_left_offset": {
+                                        "x": -37,
+                                        "y": -99
+                                    }
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c7nw0tkkdfc0",
+                                    "created": 1607479774078,
+                                    "text": "userPid(writeChan)",
+                                    "layout_left_offset": {
+                                        "x": -41,
+                                        "y": -47
+                                    }
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c7nwjzcmgao0",
+                                            "created": 1607481275577,
+                                            "text": "SOCKET_EVENT"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c7nwkyo1em00",
+                                                    "created": 1607481352455,
+                                                    "text": "Handler-MSG"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c7nw0wy0mjk0",
+                                    "created": 1607479781421,
+                                    "text": "writePid(write(Chan)",
+                                    "layout_left_offset": {
+                                        "x": -31,
+                                        "y": -1
+                                    }
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c7o24rss4js0",
+                    "created": 1607497010337,
+                    "text": "成就逻辑",
+                    "layout_mind_offset": {
+                        "x": -2,
+                        "y": 339
+                    }
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c7o251pltj40",
+                            "created": 1607497031913,
+                            "text": "初始化Attr",
+                            "layout_left_offset": {
+                                "x": 2,
+                                "y": -24
+                            }
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c7o2c9yqka80",
+                            "created": 1607497598428,
+                            "text": "游戏结束"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c7o2cff7fzc0",
+                                    "created": 1607497610308,
+                                    "text": "生成下一成就项目",
+                                    "layout_left_offset": {
+                                        "x": -35,
+                                        "y": -22
+                                    }
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c7o259i81xc0",
+                            "created": 1607497048881,
+                            "text": "client req arc",
+                            "layout_left_offset": {
+                                "x": 5,
+                                "y": -7
+                            }
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c7o25jd6n0w0",
+                                    "created": 1607497070344,
+                                    "text": "未领取的成就 包含当前未达成",
+                                    "layout_left_offset": {
+                                        "x": 7,
+                                        "y": -26
+                                    }
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c7o2b9wum880",
+                            "created": 1607497519950,
+                            "text": "领取",
+                            "layout_left_offset": {
+                                "x": -18,
+                                "y": 4
+                            }
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c7o2beoyolk0",
+                                    "created": 1607497530357,
+                                    "text": "生产下一成就项目"
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c7osbydm4zk0",
+                    "created": 1607570922064,
+                    "text": "游戏结束",
+                    "layout_mind_offset": {
+                        "x": -47.49999929219496,
+                        "y": 211.24999685212967
+                    }
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c7osc9nmnxc0",
+                            "created": 1607570946614,
+                            "text": "handlePlayerExit,",
+                            "layout_left_offset": {
+                                "x": -1,
+                                "y": -119
+                            }
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c7oscvb2dgg0",
+                                    "created": 1607570993744,
+                                    "text": "player.Pid.Cast(\"quitRoom, player.ExitRoom"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c7osdvk124w0",
+                                            "created": 1607571072650,
+                                            "text": "room.playerExit"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c7osivl09b40",
+                                                    "created": 1607571464530,
+                                                    "text": "game_end"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c7oservzgrs0",
+                            "created": 1607571143030,
+                            "text": "player.Terminate",
+                            "layout_left_offset": {
+                                "x": -6,
+                                "y": -92
+                            }
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c7osf4ibhw00",
+                            "created": 1607571170502,
+                            "text": "room.Terminate",
+                            "layout_left_offset": {
+                                "x": -18,
+                                "y": -61
+                            }
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c7osfacpc800",
+                                    "created": 1607571183223,
+                                    "text": "player.ExitRoom"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c7osj15pkf40",
+                            "created": 1607571476666,
+                            "text": "Init-sendAfter",
+                            "layout_left_offset": {
+                                "x": -30,
+                                "y": -18
+                            }
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c7osjoza4y80",
+                                    "created": 1607571528520,
+                                    "text": "m.roomPid.CastStop()"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c7ot5h1dqfs0",
+                            "created": 1607573235244,
+                            "text": "game_end",
+                            "layout_left_offset": {
+                                "x": -47.49999929219484,
+                                "y": 47.49999929219496
+                            }
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c7ot6ss89iw0",
+                                    "created": 1607573339176,
+                                    "text": "m.totalScore >= maxTotalScore ",
+                                    "layout_left_offset": {
+                                        "x": -1.2499999813735485,
+                                        "y": -51.249999236315375
+                                    }
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c7otollvnn40",
+                                    "created": 1607574734110,
+                                    "text": "JudgeGameEndByRoleNum"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c7otoq5x1sg0",
+                                    "created": 1607574744029,
+                                    "text": " len(m.playerList) <= 0"
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c7oy0ie3x340",
+                    "created": 1607586951919,
+                    "text": "游戏退出",
+                    "layout_mind_offset": {
+                        "x": -27,
+                        "y": 438
+                    }
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c7oy0oloexc0",
+                            "created": 1607586965438,
+                            "text": "未死退出",
+                            "layout_left_offset": {
+                                "x": -5,
+                                "y": -120
+                            }
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c7oy10q5rz40",
+                                    "created": 1607586991830,
+                                    "text": "清理房间个人数据"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c7oy19ut20g0",
+                                            "created": 1607587011702,
+                                            "text": "允许下一局"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c7oy0wzcmfk0",
+                            "created": 1607586983679,
+                            "text": "死亡退出"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c7oy1gckvhc0",
+                                    "created": 1607587025837,
+                                    "text": "进行下一局"
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c7zbpha3t0g0",
+                    "created": 1608641182600,
+                    "text": "判断赛季",
+                    "layout_mind_offset": {
+                        "x": 3,
+                        "y": -615
+                    }
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c7zbpsrz5i80",
+                            "created": 1608641207625,
+                            "text": "now And updatetime",
+                            "layout_left_offset": {
+                                "x": 12,
+                                "y": -97
+                            }
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c7zbq8vsm6o0",
+                                    "created": 1608641242685,
+                                    "text": "yes",
+                                    "layout_left_offset": {
+                                        "x": 18,
+                                        "y": -90
+                                    }
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c7zbqff18q80",
+                                            "created": 1608641256909,
+                                            "text": "是否领取"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c7zbqk1zu200",
+                                                    "created": 1608641267004,
+                                                    "text": "是",
+                                                    "layout_left_offset": {
+                                                        "x": 13,
+                                                        "y": -69
+                                                    }
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "c7zbqombn6o0",
+                                                    "created": 1608641276940,
+                                                    "text": "否"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "c7zbqsjhp4o0",
+                                    "created": 1608641285476,
+                                    "text": "no"
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c8hu11os0ps0",
+                    "created": 1610520948227,
+                    "text": "登录接口",
+                    "layout_mind_offset": {
+                        "x": -12,
+                        "y": 547
+                    }
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c8hu1bv4yuw0",
+                            "created": 1610520970379,
+                            "text": "注册",
+                            "layout_left_offset": {
+                                "x": -22,
+                                "y": -112
+                            },
+                            "expandState": "expand"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c8hu1zho1s00",
+                                    "created": 1610521021808,
+                                    "text": "RegisterReq--0",
+                                    "layout_left_offset": {
+                                        "x": -40,
+                                        "y": -22
+                                    }
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c8hu20uw2280",
+                                    "created": 1610521024784,
+                                    "text": "账号登录（未使用）",
+                                    "layout_left_offset": {
+                                        "x": -36,
+                                        "y": -16
+                                    }
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c8hu1jdoqx40",
+                            "created": 1610520986738,
+                            "text": "快速注册",
+                            "layout_left_offset": {
+                                "x": -36,
+                                "y": -68
+                            }
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c8hu3luvmd40",
+                                    "created": 1610521148860,
+                                    "text": "1、RegisterReq--1"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c8hu2ysabfk0",
+                                    "created": 1610521098637,
+                                    "text": "2、CreateUserReq创角"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c8hu414hetc0",
+                                    "created": 1610521182092,
+                                    "text": "3、LoginResp",
+                                    "layout_left_offset": {
+                                        "x": -14,
+                                        "y": -1
+                                    }
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c8hu1ncfra80",
+                            "created": 1610520995370,
+                            "text": "玩家登录",
+                            "layout_left_offset": {
+                                "x": -35,
+                                "y": 6
+                            }
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c8hu2t4a2i80",
+                                    "created": 1610521086302,
+                                    "text": "LoginReq"
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "template": "default",
+    "theme": "fresh-blue",
+    "version": "1.4.43"
+}

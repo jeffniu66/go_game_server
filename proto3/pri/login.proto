@@ -1,0 +1,127 @@
+syntax = "proto3";
+
+import "user.proto";
+import "common.proto";
+import "item.proto";
+import "enumtype.proto";
+
+package proto3;
+
+message logina {
+  //    ProtoCmd cmd = 1;
+  loginaReq req = 2;
+  loginaResp resqp = 3;
+  message loginaReq {
+    int32 id = 1;
+    string name = 2;
+  }
+  message loginaResp {
+    int32 id = 1;
+    string name = 2;
+  }
+}
+
+// 选国家请求
+message CreateCountryReq {
+  int32 country_id = 1;               // 选国家
+}
+
+message CreateCountryResp {
+  int32 birth_point = 1;    // 玩家出生点
+  int32 spaceRiftGetStamp = 2;    // 空间裂缝领取时间戳
+}
+
+message CreateNameReq {
+  string lord_name = 1;               // 起领主名字
+}
+
+message CreateNameResp {
+  int32 result = 1;        // 0为成功，1为失败
+}
+
+message CheckNameReq {
+  string lord_name = 1;               // 领主名字
+}
+
+message CheckNameResp {
+  int32 result = 1;                   // 0为成功，1为失败
+}
+
+// T下线推送
+message PushKick {
+  //    KickTypeEnum kick_type = 1;         // 被T类型
+  int32 extend = 2;                   // 扩展字段
+  string reason = 3;                  // T人原因
+}
+
+/////////////////////////////////////////////////////////////////////
+/////////////////////////////////ninjagame///////////////////////////
+/////////////////////////////////////////////////////////////////////
+// 登录请求
+message LoginReq {
+  int32 role_id = 1;
+//  string username = 1;            // 账号名
+//  int32 sex = 2; // 性别
+//  string token = 3;            // token或code
+//  string channel = 4; // 渠道 微信: wx QQ:qq OPPO:oppo
+}
+
+// 登录响应
+message LoginResp {
+  int32 ret = 1; // 1成功 -1:系统繁忙 40029:code无效 45011:频率限制
+  int32 server_sec = 2;               // 服务器时间戳
+  CommonStatusEnum is_room = 3;       // 是否在房间，1-在，2-不在
+  PlayerAttr player_attr = 4;         // 玩家属性
+  ItemResp itemResp = 5;              // 玩家背包
+  string session_key = 6;
+  repeated int32 guides = 7;          // 新手引导
+  repeated RedDot red_dot = 8;        // 红点
+}
+
+message RedDot {
+  RedPointEnum red_type = 1;
+  repeated int32 red_data = 2;
+}
+
+// 退出请求
+message LogoutReq {}
+
+message LogoutResp {
+  CommonStatusEnum status = 1; // 玩家下线成功
+}
+
+message RegisterReq {
+  RegisterTypeEnum registerType = 1; // 0-正常注册，1-快速注册
+  string acct_name = 2; // 账号
+  string pw = 3; // 密码
+}
+
+message RegisterResp {
+  CommonStatusEnum status = 1; // 请求是否成功，1-成功，其他失败
+  string acct = 2; // 账号
+  string pw = 3; // 正常注册不返回密码
+}
+
+// 随机名称
+message RandNameReq {
+}
+
+// 随机名称返回
+message RandNameResp {
+  int32 sex = 1;
+  string username = 2;
+  string name_index = 3;
+}
+
+// 创建角色
+message CreateUserReq {
+  string acct_name = 1;   // 账号名
+  string username = 2;    // 用户名
+  string name_index = 3;  // 随机名索引
+  int32 sex = 4;          // 性别
+}
+
+// 创建角色返回
+message CreateUserResp {
+  string username = 1; // 用户名
+}

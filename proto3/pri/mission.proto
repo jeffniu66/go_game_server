@@ -1,0 +1,76 @@
+syntax = "proto3";
+
+import "item.proto";
+import "room.proto";
+import "enumtype.proto";
+
+package proto3;
+
+message FinishMissionReq {
+  int32 point_id = 1; // 位置点id
+}
+
+message FinishMissionResp {
+  repeated int32 point_ids = 1; // 已完成的任务位置id
+}
+
+message TotalScoreResp {
+  int32 total_score = 1;
+}
+
+message DropItemResp {
+  repeated DropItem drop_item = 1;
+}
+
+message DropItem {
+  DropTypeEnum type = 1;
+  repeated Item items = 2;
+}
+
+enum DropTypeEnum {
+  default_value = 0;
+  item = 1;
+  skill = 2;
+}
+
+message UseItemReq {
+  DropTypeEnum type = 1;
+  int32 item_id = 2;
+  int32 use_itemed_user_id = 3; // 技能施法对象
+}
+
+message UseItemResp {
+  int32 ret = 1; // 返回状态 1成功
+  int32 item_id = 2;
+  int32 use_item_user_id = 3; // 使用者
+  int32 use_itemed_user_id = 4; // 技能施法对象
+  PlayerRoleEnum role = 5; // 1狼人 2平民
+  int32 rand_room_id = 6; // 随机房间id
+}
+
+message ChoiceItemReq {
+  DropTypeEnum type = 1;
+  int32 item_id = 2;
+  int32 is_choice = 3; // 1选择 2放弃
+}
+
+message ChoiceItemResp {
+  ErrEnum ret = 1; // 返回状态 1成功
+  DropTypeEnum type = 2;
+  int32 item_id = 3;
+}
+
+// 紧急任务
+message UrgencyTaskReq {
+  int32 trigger_point = 1; // 触发点
+}
+
+message FinishUrgencyTaskReq {
+  int32 point_id = 1; // 位置点id
+  int32 user_id = 2;  // 用户id
+}
+
+message FinishUrgencyTaskResp {
+  repeated int32 point_ids = 1; // 已完成的紧急任务位置id
+}
+

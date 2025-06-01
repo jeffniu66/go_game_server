@@ -1,0 +1,29 @@
+syntax = "proto3";
+
+// import "enumtype.proto";
+
+package proto3;
+
+message FreshGiftResp {
+    int32 gift_type= 1;         // 礼包一
+    int32 need_num = 2;
+    int32 now_num = 3;
+    string rewards = 4;
+}
+
+message FreshEndTimeResp {
+    int32 gift_type= 1;        // 礼包一
+    int32 end_time = 2;
+    int32 now_time = 3;
+    string reward = 4;
+}
+
+message GetFreshGiftReq {
+    int32 gift_type= 1;
+    string reward = 2;
+}
+
+message GetFreshGiftResp {
+    int32 gift_type = 1;
+    string reward = 2;
+}

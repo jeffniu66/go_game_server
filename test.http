@@ -1,0 +1,87 @@
+###
+// 签名测试
+POST http://instantGame.game-test.wanyol.com/instant-game-open/rank/update
+Content-Type: application/x-www-form-urlencoded
+
+userId=2000060053
+&pkgName=com.lechang.leftright.kyx.nearme.gamecenter
+&rankType=0
+&rankScore=12
+&sign=BB20D131CDF4B0EA8D2128C829763C75&timeStamp=1556537240333
+
+// localhost
+@localhost = http://localhost:86
+###
+// 更新table
+GET {{localhost}}/tableconfig/update
+
+###
+// 获取发送数据大小 单位B
+GET {{localhost}}/msgsize
+
+###
+// 查看所有房间
+GET {{localhost}}/gm?gm=hello&msg=all_room
+
+###
+// 查看房间成员
+GET {{localhost}}/gm?gm=hello&msg=get_room^5315
+
+
+
+// 微信服务器 49.234.138.192
+@Wxhost = http://49.234.138.192:8090
+AI 100 10 wss://49.234.138.192:443/ws
+###
+GET {{Wxhost}}/tableconfig/update
+
+###
+// 获取发送数据大小 单位B
+GET {{Wxhost}}/msgsize
+
+###
+// 查看所有房间
+// 3275,2360,8881,1666,8377,6986,8718,4980,467,3355,9010,8804,5209,4464,7806,114,7689,4194,5432,5299,4192,4275,3704,2322,9863,2676,7773,1208,1503,2309,54,4228,9235,1856,2812,8969,5181,2938,8078,7600,1102,6195,7103,7371,4755,308,846,818,1700,7895,2225
+GET {{Wxhost}}/gm?gm=hello&msg=all_room
+
+###
+// 查看房间成员
+GET {{Wxhost}}/gm?gm=hello&msg=get_room^4173
+
+###
+// 查看在线人数
+GET {{Wxhost}}/gm?msg=gmGetOnlineNum^1
+
+###
+// 查看所有房间
+POST  http://localhost:8006/sendFullServerMail
+Content-Type: application/json
+
+{
+    "title": "6",
+    "content": "更新服务器，暂停十分钟。因为时间短，所以没有奖励。2021年2月2日22:00"
+}
+
+// 测试服务器 49.234.138.192
+@Testhost = http://42.192.186.40:8005
+#AII 10 10 ws://42.192.186.40:80/ws
+#AII 1 10 ws://10.105.10.106:80/ws
+# pprof -http 127.0.0.1:9090 http://42.192.186.40:8005/debug/pprof/profile?seconds=120
+###
+GET {{Testhost}}/tableconfig/update
+
+###
+// 获取发送数据大小 单位B
+GET {{Testhost}}/msgsize
+
+###
+// 查看所有房间
+GET {{Testhost}}/gm?gm=hello&msg=all_room
+
+###
+// 查看房间成员
+GET {{Testhost}}/gm?gm=hello&msg=get_room^1509
+
+###
+// 查看在线人数
+GET {{Testhost}}/gm?msg=gmGetOnlineNum^1

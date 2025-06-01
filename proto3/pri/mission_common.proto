@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package proto3;
+
+message UrgencyTaskResp {
+  int32 trigger_point = 1; // 触发点
+  int64 task_end_time = 2; // 紧急任务结束时间
+  int64 cd_end_time = 3; // CD结束时间
+}

@@ -1,0 +1,395 @@
+syntax = "proto3";
+
+package proto3;
+
+import "common.proto";
+import "enumtype.proto";
+/*
+// 请求玩家产量
+message UserThroughputReq {
+
+}
+
+// 请求玩家势力详情
+message UserPowerInfoReq{
+  int32 user_id = 1;    // 玩家ID
+}
+
+message UserPowerInfoResp{
+  int32 user_id = 1;      // 玩家ID
+  int32 power = 2;        // 势力值
+  int32 ally_id = 3;      // 工会ID
+  int32 domain = 4;       // 领地个数
+  int32 feats = 5;        // 武勋
+  int32 fortress = 6;     // 要塞个数
+  int32 lord_level = 7;   // 领主的爵位
+  string user_name = 8;   // 玩家名
+  string ally_name = 9;   // 工会名
+  string group_name = 10; // 分组名
+  string introduce = 11;  // 个人介绍
+  int32 headId = 12;      // head id
+}
+
+// 税收信息
+message TaxInfoReq{
+
+}
+message TaxInfoResp{
+  int32 freeTimes = 1;            // 免费剩余次数
+  int32 payTimes = 2;            // 付费剩余次数
+  int32 freeTimeStamp = 3;        // 免费时间戳
+  repeated int32 taxMoney = 4;    // 每次的金钱
+}
+
+// 收税
+message CollectTaxReq{
+  int32 collectType = 1;      // 0表示免费,1表示付费
+}
+message CollectTaxResp{
+  int32 freeTimes = 1;    // 免费剩余次数
+  int32 payTimes = 2;    // 付费剩余次数
+  int32 freeTimeStamp = 3;// 免费时间戳
+  int32 money = 4;    // 税收
+}
+
+// 推送税收信息
+message PushTaxInfo{
+  int32 freeTimes = 1;    // 免费剩余次数
+  int32 payTimes = 2;    // 付费剩余次数
+  int32 freeTimeStamp = 3;// 免费时间戳
+  repeated int32 taxMoney = 4;    // 每次的金钱
+}
+
+// 请求玩家事件
+message IncidentInfoReq{
+
+}
+message IncidentInfoResp{
+  repeated IncidentInfo incident_list = 1;    // 事件列表
+}
+
+// 推送玩家事件
+message PushIncidentInfo{
+  repeated IncidentInfo incident_list = 1;    // 事件列表
+}
+
+// 推送删除玩家事件
+message PushDelIncidentInfo{
+  int32 incident_id = 1;
+  int32 landId = 2;
+}
+
+// 事件信息
+message IncidentInfo{
+  int32 incident_id = 1; // 事件Id
+  int32 over_time = 2; // 时间结束时间戳
+  int32 land_id = 3; // 事件地块Id
+}
+
+message FirebaseTokenReq {
+  string token = 1;
+}
+
+message SetUserCommonFlagReq {
+  int32 common_flag = 1;
+}
+
+message SetUserCommonFlagResp {
+  int32 common_flag = 1;
+}
+*/
+
+
+/*
+ * 以下使用的接口
+ */
+
+// SDK绑定
+message SdkBindReq {
+  int32 bindType = 1;
+  string name = 2;
+}
+
+// SDK绑定返回
+message SdkBindResp {
+  int32 bindType = 1;
+  string name = 2;
+}
+
+message PlayerAttr {
+  int32 user_id = 1;
+  int32 level = 2;                  // 等级
+  int32 exp = 3;                    // 经验
+  int32 max_exp = 4;                // 最大经验
+  int32 gold = 5;                   // 金币
+  int32 rank_id = 6;                // 段位
+  int32 star = 8;                   // 星级
+  int32 star_count = 9;             // 总星级
+  int32 his_rank_id = 10;           // 历史最高段位
+  int32 ninja_id = 12;              // 忍阶
+  int32 archive_point = 14;         // 成就点
+  int32 game_duration = 15;         // 游戏时长
+  int32 match_game_num = 16;        // 排位总局数
+  int32 match_win_num = 17;         // 排位胜场局数
+  int32 match_wolf_num = 18;        // 狼人总局数
+  int32 wolf_win_num = 19;          // 狼人胜场局数
+  int32 poor_win_num = 20;          // 平民胜场局数
+  int32 offline_num = 21;           // 掉线局数
+  int32 vote_total = 22;            // 总投票次数
+  int32 vote_correct_total = 23;    // 投票正确次数
+  int32 kill_total = 24;            // 杀人次数
+  int32 wolf_kill_total = 25;       // 狼人杀人次数
+  int32 poor_kill_total = 26;       // 平民杀人次数
+  int32 bekilled_total = 27;        // 被杀害次数
+  int32 bevoteed_total = 28;        // 被杀票杀次数
+  int32 user_border = 29;           // 相框
+  int32 user_photo = 30;            // 头像
+  int32 use_skin = 31;              // 皮肤
+  int32 gemstone = 32;              // 宝石
+  string got_skins = 33;            // 皮肤ids:2,3
+  string username = 34;             // 昵称
+  int32 sex_modify = 35;            // 1未修改 2已修改
+  int32 sex = 36;                   // 性别
+  int32 use_title = 37;             // 使用的称号
+}
+
+message UserPageReq {
+  UserPageEnum page_type = 1; // 界面类型
+}
+
+// 个人信息返回
+message UserInfoResp {
+  PlayerAttr player_attr = 1;
+}
+
+// 成就
+message Archivement {
+  int32 archive_id = 1;
+  int32 archive_num = 2;
+  CommonStatusEnum archive_status = 3; //0-已领取 1-达成待领取，2-未达成
+}
+
+// 成就返回
+message UserArchiveResp {
+  int32 ninja_id = 1;                         // 忍级
+  int32 archive_point = 3;                    // 成就点
+  int32 max_archive_point = 4;                // 最大成就点
+  int32 ninja_id_gift = 5;                    // 忍者礼包，0-没有
+  repeated Archivement archivement_list = 6;  // 达成的成就id
+}
+
+// 领取成就 
+message GetArchiveReq {
+  int32 archive_id = 1; // 成就id
+}
+
+// 成就返回
+message GetArchiveResp {
+  int32 ninja_id = 1;           // 忍级
+  int32 archive_point = 3;      // 成就点
+  int32 max_archive_point = 4;  // 最大成就点
+  int32 ninja_id_gift = 5;      // 忍者礼包，0-没有
+  Archivement archivement = 6;
+}
+
+// 领取忍者礼包
+message GetNinjaGiftReq {
+  int32 ninja_id_gift = 1; // id
+}
+
+// 领取忍者礼包
+message GetNinjaGiftResp {
+  CommonStatusEnum status = 1;  // 状态， 1-成功
+  int32 ninja_id_gift = 2;      // 礼包 id 0-没有礼包，其他-有礼包
+}
+
+message UserTitle {
+  int32 title_type = 1;
+  int32 title_num = 2;
+  repeated int32 got_titles = 3;
+}
+message OutWardInfo {
+  int32 ninja_id = 1;   // 忍级
+  int32 rank_id = 2;    // 段位
+  int32 use_title = 3;  // 使用的称号
+}
+// 称号请求返回
+message UserTitleResp {
+  OutWardInfo outward_info = 1;
+  repeated UserTitle title_list = 2;
+}
+
+// 使用称号 公共返回 CMD_ErrResp: code=ErrorPass-成功 Error_NotGet_Title- 未获得该称号
+message UseTitleReq {
+  int32 title_id = 1;
+}
+
+message UseTitleResp {
+  int32 id = 1;
+}
+
+
+// 获得的新称号
+message UserNewGotTitleResp {
+  repeated int32 titld_ids = 1; // 称号id
+}
+
+message SkinPiece {
+  int32 id = 1;
+  int32 piece_num = 2;
+}
+// 用户皮肤返回
+message UserSkinResp {
+  OutWardInfo outward_info = 1;
+  int32 use_skin = 2;
+  repeated int32 got_skins = 3;
+  repeated SkinPiece piece_list = 4;
+}
+
+message UnlockSkinReq {
+  int32 avatar_id = 2; // 角色id
+}
+
+message UnlockSkinResp {
+  int32 avatar_id = 1;        // 角色id
+  int32 piece_id = 2;         // 碎片id
+  int32 piece_num = 3;        // 碎片数量
+  int32 all_power_piece = 4;  // 万能碎片剩余数量
+}
+
+// 使用皮肤 公共返回 CMD_ErrResp: code=ErrorPass-成功 Error_NotGet_Title- 未获得该称号
+message UseSkinReq {
+  int32 skin_id = 1;
+}
+
+message UseSkinResp {
+  int32 id = 1;
+}
+
+// 用户邮件返回
+message UserMail {
+  int32 id = 1; // 邮件id
+  CommonStatusEnum is_read = 2;     // 是否读取 1-已读
+  CommonStatusEnum is_open = 3;     // 是否读取 1-已领取
+  DetailTypeEnum detail_type = 4;   // 邮件类型
+  string title = 5;                 // 标题
+  string content = 6;               // 内容
+  int32 create_time = 7;            // 创建时间
+  string item_ids = 8;              // 附加-道具id
+}
+
+// 用户邮件返回
+message UserMailResp {
+  repeated UserMail user_mail_list = 1;
+}
+
+message UserReadMailReq {
+  int32 mail_id = 1;
+  MailEnum opt_type = 2; // 操作类型
+}
+
+message UserReadMailResp {
+  CommonStatusEnum success = 1; // 是否 1-成功
+  int32 mail_id = 2;
+  MailEnum opt_type = 3; // 操作类型
+}
+
+message RedPointResp {
+  RedPointEnum red_type = 1; // 红点
+  repeated int32 red_data = 2; // 红点数据
+}
+
+// 请求设置头像
+message SetPhotoReq {
+  int32 photo_id = 1;
+}
+
+// 设置头像返回
+message SetPhotoResp {
+  int32 photo_id = 1;
+}
+
+// 请求设置头像
+message SetBorderReq {
+  int32 border_id = 1;
+}
+
+// 设置头像返回
+message SetBorderResp {
+  int32 border_id = 1;
+}
+
+// 赛季变更奖励
+message QualfyChangeResp {
+  int32 rank_id = 1;
+  int32 old_rank_id = 2;
+}
+
+// 段位变化返回
+message NewRankResp {
+  int32 rank_id = 1;  // 段位
+  int32 star = 2;     // 星级
+  int32 level = 3;    // 等级
+  int32 exp = 4;      // 经验
+  int32 max_exp = 5;  // 最大经验
+}
+
+// 新手引导请求
+message NewGuideReq {
+  int32 guide_id = 1; // 新手引导id
+}
+
+// 新手引导响应
+message NewGuideResp {
+  ErrEnum errNum = 1; // 返回状态 1成功
+}
+
+// 修改角色名请求
+message ModifyNameReq {
+  string name = 1; // 新角色名
+  int32 sex = 2; // 性别
+}
+
+// 修改角色名响应
+message ModifyNameResp {
+  ErrEnum errNum = 1; // 返回状态 1成功
+  string name = 2; // 新角色名
+  int32 sex = 3; // 性别
+  int32 left_modify_card = 4; // 剩余改名卡
+}
+
+// 排行榜请求响应
+message UserTop {
+  int32 user_id = 1;
+  string username = 2;
+  int32 user_photo = 3;
+  int32 top_id = 4;  // 名次
+  int32 rank_id = 5; // 段位
+  int32 star =  6;
+  int32 level = 7;
+  int32 exp = 8;
+}
+
+// 排行榜请求
+message TopBoardReq {
+  TopBoardEnum top_type = 1; // 榜单类型
+}
+
+// 排行榜请求响应
+message TopBoardResp {
+  TopBoardEnum top_type = 1; // 榜单类型
+  repeated UserTop top_list = 2;
+  UserTop self_top = 3;
+}
+
+// 用户信息请求
+message UserTopReq {
+  TopBoardEnum top_type = 1; // 榜单类型
+  int32 user_id = 2;
+}
+
+// 用户信息返回
+message UserTopResp {
+  TopBoardEnum top_type = 1; // 榜单类型
+  PlayerAttr player_attr = 2;
+}

@@ -1,0 +1,988 @@
+[
+  {
+    "id": 101,
+    "dropid": 1,
+    "itemtype": 2,
+    "itemid": 10002,
+    "num": 1,
+    "probability": 200
+  },
+  {
+    "id": 102,
+    "dropid": 1,
+    "itemtype": 2,
+    "itemid": 10001,
+    "num": 1,
+    "probability": 200
+  },
+  {
+    "id": 103,
+    "dropid": 1,
+    "itemtype": 2,
+    "itemid": 10007,
+    "num": 1,
+    "probability": 200
+  },
+  {
+    "id": 104,
+    "dropid": 1,
+    "itemtype": 2,
+    "itemid": 10008,
+    "num": 1,
+    "probability": 200
+  },
+  {
+    "id": 105,
+    "dropid": 1,
+    "itemtype": 2,
+    "itemid": 10106,
+    "num": 1,
+    "probability": 200
+  },
+  {
+    "id": 201,
+    "dropid": 2,
+    "itemtype": 2,
+    "itemid": 10005,
+    "num": 1,
+    "probability": 200
+  },
+  {
+    "id": 202,
+    "dropid": 2,
+    "itemtype": 2,
+    "itemid": 10006,
+    "num": 1,
+    "probability": 200
+  },
+  {
+    "id": 203,
+    "dropid": 2,
+    "itemtype": 2,
+    "itemid": 10004,
+    "num": 1,
+    "probability": 100
+  },
+  {
+    "id": 204,
+    "dropid": 2,
+    "itemtype": 2,
+    "itemid": 10106,
+    "num": 1,
+    "probability": 200
+  },
+  {
+    "id": 205,
+    "dropid": 2,
+    "itemtype": 2,
+    "itemid": 10008,
+    "num": 1,
+    "probability": 100
+  },
+  {
+    "id": 301,
+    "dropid": 3,
+    "itemtype": 2,
+    "itemid": 10001,
+    "num": 1,
+    "probability": 100
+  },
+  {
+    "id": 302,
+    "dropid": 3,
+    "itemtype": 2,
+    "itemid": 10005,
+    "num": 1,
+    "probability": 100
+  },
+  {
+    "id": 303,
+    "dropid": 3,
+    "itemtype": 2,
+    "itemid": 10004,
+    "num": 1,
+    "probability": 200
+  },
+  {
+    "id": 304,
+    "dropid": 3,
+    "itemtype": 2,
+    "itemid": 10014,
+    "num": 1,
+    "probability": 200
+  },
+  {
+    "id": 305,
+    "dropid": 3,
+    "itemtype": 2,
+    "itemid": 10013,
+    "num": 1,
+    "probability": 200
+  },
+  {
+    "id": 401,
+    "dropid": 4,
+    "itemtype": 2,
+    "itemid": 10002,
+    "num": 1,
+    "probability": 150
+  },
+  {
+    "id": 402,
+    "dropid": 4,
+    "itemtype": 2,
+    "itemid": 10007,
+    "num": 1,
+    "probability": 150
+  },
+  {
+    "id": 403,
+    "dropid": 4,
+    "itemtype": 2,
+    "itemid": 10006,
+    "num": 1,
+    "probability": 150
+  },
+  {
+    "id": 404,
+    "dropid": 4,
+    "itemtype": 2,
+    "itemid": 10013,
+    "num": 1,
+    "probability": 150
+  },
+  {
+    "id": 405,
+    "dropid": 4,
+    "itemtype": 2,
+    "itemid": 10014,
+    "num": 1,
+    "probability": 150
+  },
+  {
+    "id": 501,
+    "dropid": 5,
+    "itemtype": 2,
+    "itemid": 10005,
+    "num": 1,
+    "probability": 150
+  },
+  {
+    "id": 502,
+    "dropid": 5,
+    "itemtype": 2,
+    "itemid": 10006,
+    "num": 1,
+    "probability": 150
+  },
+  {
+    "id": 503,
+    "dropid": 5,
+    "itemtype": 2,
+    "itemid": 10004,
+    "num": 1,
+    "probability": 150
+  },
+  {
+    "id": 504,
+    "dropid": 5,
+    "itemtype": 2,
+    "itemid": 10013,
+    "num": 1,
+    "probability": 150
+  },
+  {
+    "id": 505,
+    "dropid": 5,
+    "itemtype": 2,
+    "itemid": 10106,
+    "num": 1,
+    "probability": 150
+  },
+  {
+    "id": 601,
+    "dropid": 6,
+    "itemtype": 2,
+    "itemid": 10002,
+    "num": 1,
+    "probability": 150
+  },
+  {
+    "id": 602,
+    "dropid": 6,
+    "itemtype": 2,
+    "itemid": 10001,
+    "num": 1,
+    "probability": 150
+  },
+  {
+    "id": 603,
+    "dropid": 6,
+    "itemtype": 2,
+    "itemid": 10007,
+    "num": 1,
+    "probability": 150
+  },
+  {
+    "id": 604,
+    "dropid": 6,
+    "itemtype": 2,
+    "itemid": 10014,
+    "num": 1,
+    "probability": 150
+  },
+  {
+    "id": 605,
+    "dropid": 6,
+    "itemtype": 2,
+    "itemid": 10008,
+    "num": 1,
+    "probability": 200
+  },
+  {
+    "id": 701,
+    "dropid": 100,
+    "itemtype": 2,
+    "itemid": 10002,
+    "num": 8
+  },
+  {
+    "id": 702,
+    "dropid": 100,
+    "itemtype": 2,
+    "itemid": 10001,
+    "num": 8
+  },
+  {
+    "id": 703,
+    "dropid": 100,
+    "itemtype": 2,
+    "itemid": 10007,
+    "num": 8
+  },
+  {
+    "id": 704,
+    "dropid": 100,
+    "itemtype": 2,
+    "itemid": 10005,
+    "num": 8
+  },
+  {
+    "id": 705,
+    "dropid": 100,
+    "itemtype": 2,
+    "itemid": 10006,
+    "num": 8
+  },
+  {
+    "id": 706,
+    "dropid": 100,
+    "itemtype": 2,
+    "itemid": 10004,
+    "num": 3
+  },
+  {
+    "id": 707,
+    "dropid": 100,
+    "itemtype": 2,
+    "itemid": 10013,
+    "num": 3
+  },
+  {
+    "id": 708,
+    "dropid": 100,
+    "itemtype": 2,
+    "itemid": 10014,
+    "num": 3
+  },
+  {
+    "id": 709,
+    "dropid": 100,
+    "itemtype": 2,
+    "itemid": 10008,
+    "num": 3
+  },
+  {
+    "id": 710,
+    "dropid": 100,
+    "itemtype": 2,
+    "itemid": 10106,
+    "num": 8
+  },
+  {
+    "id": 800,
+    "dropid": 51,
+    "itemtype": 2,
+    "itemid": 10007,
+    "num": 1,
+    "probability": 100
+  },
+  {
+    "id": 801,
+    "dropid": 51,
+    "itemtype": 2,
+    "itemid": 10002,
+    "num": 1,
+    "probability": 100
+  },
+  {
+    "id": 802,
+    "dropid": 51,
+    "itemtype": 2,
+    "itemid": 10001,
+    "num": 1,
+    "probability": 100
+  },
+  {
+    "id": 803,
+    "dropid": 51,
+    "itemtype": 2,
+    "itemid": 10005,
+    "num": 1,
+    "probability": 100
+  },
+  {
+    "id": 804,
+    "dropid": 51,
+    "itemtype": 2,
+    "itemid": 10006,
+    "num": 1,
+    "probability": 100
+  },
+  {
+    "id": 805,
+    "dropid": 51,
+    "itemtype": 2,
+    "itemid": 10106,
+    "num": 1,
+    "probability": 100
+  },
+  {
+    "id": 806,
+    "dropid": 51,
+    "itemtype": 2,
+    "itemid": 10014,
+    "num": 1,
+    "probability": 50
+  },
+  {
+    "id": 807,
+    "dropid": 51,
+    "itemtype": 2,
+    "itemid": 10102,
+    "num": 1,
+    "probability": 0
+  },
+  {
+    "id": 850,
+    "dropid": 52,
+    "itemtype": 2,
+    "itemid": 10106,
+    "num": 1,
+    "probability": 200
+  },
+  {
+    "id": 851,
+    "dropid": 52,
+    "itemtype": 2,
+    "itemid": 10007,
+    "num": 1,
+    "probability": 100
+  },
+  {
+    "id": 852,
+    "dropid": 52,
+    "itemtype": 2,
+    "itemid": 10006,
+    "num": 1,
+    "probability": 100
+  },
+  {
+    "id": 853,
+    "dropid": 52,
+    "itemtype": 2,
+    "itemid": 10014,
+    "num": 1,
+    "probability": 50
+  },
+  {
+    "id": 854,
+    "dropid": 52,
+    "itemtype": 2,
+    "itemid": 10005,
+    "num": 1,
+    "probability": 200
+  },
+  {
+    "id": 855,
+    "dropid": 52,
+    "itemtype": 2,
+    "itemid": 10102,
+    "num": 1,
+    "probability": 0
+  },
+  {
+    "id": 900,
+    "dropid": 50,
+    "itemtype": 2,
+    "itemid": 10007,
+    "num": 4
+  },
+  {
+    "id": 901,
+    "dropid": 50,
+    "itemtype": 2,
+    "itemid": 10002,
+    "num": 4
+  },
+  {
+    "id": 902,
+    "dropid": 50,
+    "itemtype": 2,
+    "itemid": 10001,
+    "num": 1
+  },
+  {
+    "id": 903,
+    "dropid": 50,
+    "itemtype": 2,
+    "itemid": 10005,
+    "num": 1
+  },
+  {
+    "id": 904,
+    "dropid": 50,
+    "itemtype": 2,
+    "itemid": 10014,
+    "num": 1
+  },
+  {
+    "id": 905,
+    "dropid": 50,
+    "itemtype": 2,
+    "itemid": 10006,
+    "num": 2
+  },
+  {
+    "id": 906,
+    "dropid": 50,
+    "itemtype": 2,
+    "itemid": 10106,
+    "num": 4
+  },
+  {
+    "id": 907,
+    "dropid": 50,
+    "itemtype": 2,
+    "itemid": 10102,
+    "num": 1
+  },
+  {
+    "id": 950,
+    "dropid": 95,
+    "itemtype": 2,
+    "itemid": 10002,
+    "num": 1,
+    "probability": 250
+  },
+  {
+    "id": 951,
+    "dropid": 95,
+    "itemtype": 2,
+    "itemid": 10006,
+    "num": 1,
+    "probability": 250
+  },
+  {
+    "id": 952,
+    "dropid": 95,
+    "itemtype": 2,
+    "itemid": 10007,
+    "num": 1,
+    "probability": 250
+  },
+  {
+    "id": 953,
+    "dropid": 95,
+    "itemtype": 2,
+    "itemid": 10106,
+    "num": 1,
+    "probability": 250
+  },
+  {
+    "id": 980,
+    "dropid": 99,
+    "itemtype": 2,
+    "itemid": 10002,
+    "num": 7
+  },
+  {
+    "id": 981,
+    "dropid": 99,
+    "itemtype": 2,
+    "itemid": 10006,
+    "num": 7
+  },
+  {
+    "id": 982,
+    "dropid": 99,
+    "itemtype": 2,
+    "itemid": 10007,
+    "num": 7
+  },
+  {
+    "id": 983,
+    "dropid": 99,
+    "itemtype": 2,
+    "itemid": 10106,
+    "num": 7
+  },
+  {
+    "id": 1001,
+    "dropid": 901,
+    "itemtype": 1,
+    "itemid": 1,
+    "num": 188,
+    "probability": 50
+  },
+  {
+    "id": 1002,
+    "dropid": 901,
+    "itemtype": 1,
+    "itemid": 1,
+    "num": 268,
+    "probability": 100
+  },
+  {
+    "id": 1003,
+    "dropid": 901,
+    "itemtype": 1,
+    "itemid": 1,
+    "num": 339,
+    "probability": 300
+  },
+  {
+    "id": 1004,
+    "dropid": 901,
+    "itemtype": 1,
+    "itemid": 1,
+    "num": 529,
+    "probability": 400
+  },
+  {
+    "id": 1005,
+    "dropid": 901,
+    "itemtype": 1,
+    "itemid": 1,
+    "num": 996,
+    "probability": 150
+  },
+  {
+    "id": 1006,
+    "dropid": 901,
+    "itemtype": 1,
+    "itemid": 3,
+    "num": 42,
+    "probability": 450
+  },
+  {
+    "id": 1007,
+    "dropid": 901,
+    "itemtype": 1,
+    "itemid": 3,
+    "num": 98,
+    "probability": 350
+  },
+  {
+    "id": 1008,
+    "dropid": 901,
+    "itemtype": 1,
+    "itemid": 3,
+    "num": 160,
+    "probability": 200
+  },
+  {
+    "id": 1012,
+    "dropid": 901,
+    "itemtype": 1,
+    "itemid": 1000,
+    "num": 1,
+    "probability": 600
+  },
+  {
+    "id": 1013,
+    "dropid": 901,
+    "itemtype": 1,
+    "itemid": 1000,
+    "num": 2,
+    "probability": 400
+  },
+  {
+    "id": 1014,
+    "dropid": 901,
+    "itemtype": 1,
+    "itemid": 101,
+    "num": 1,
+    "probability": 320
+  },
+  {
+    "id": 1015,
+    "dropid": 901,
+    "itemtype": 1,
+    "itemid": 101,
+    "num": 2,
+    "probability": 350
+  },
+  {
+    "id": 1016,
+    "dropid": 901,
+    "itemtype": 1,
+    "itemid": 101,
+    "num": 3,
+    "probability": 330
+  },
+  {
+    "id": 1017,
+    "dropid": 901,
+    "itemtype": 1,
+    "itemid": 102,
+    "num": 1,
+    "probability": 330
+  },
+  {
+    "id": 1018,
+    "dropid": 902,
+    "itemtype": 1,
+    "itemid": 1,
+    "num": 357,
+    "probability": 50
+  },
+  {
+    "id": 1019,
+    "dropid": 902,
+    "itemtype": 1,
+    "itemid": 1,
+    "num": 552,
+    "probability": 100
+  },
+  {
+    "id": 1020,
+    "dropid": 902,
+    "itemtype": 1,
+    "itemid": 1,
+    "num": 721,
+    "probability": 300
+  },
+  {
+    "id": 1021,
+    "dropid": 902,
+    "itemtype": 1,
+    "itemid": 1,
+    "num": 1042,
+    "probability": 400
+  },
+  {
+    "id": 1022,
+    "dropid": 902,
+    "itemtype": 1,
+    "itemid": 1,
+    "num": 1959,
+    "probability": 150
+  },
+  {
+    "id": 1023,
+    "dropid": 902,
+    "itemtype": 1,
+    "itemid": 3,
+    "num": 141,
+    "probability": 650
+  },
+  {
+    "id": 1024,
+    "dropid": 902,
+    "itemtype": 1,
+    "itemid": 3,
+    "num": 309,
+    "probability": 350
+  },
+  {
+    "id": 1025,
+    "dropid": 902,
+    "itemtype": 1,
+    "itemid": 4,
+    "num": 7,
+    "probability": 590
+  },
+  {
+    "id": 1026,
+    "dropid": 902,
+    "itemtype": 1,
+    "itemid": 4,
+    "num": 15,
+    "probability": 260
+  },
+  {
+    "id": 1027,
+    "dropid": 902,
+    "itemtype": 1,
+    "itemid": 4,
+    "num": 26,
+    "probability": 150
+  },
+  {
+    "id": 1028,
+    "dropid": 902,
+    "itemtype": 1,
+    "itemid": 1000,
+    "num": 2,
+    "probability": 600
+  },
+  {
+    "id": 1029,
+    "dropid": 902,
+    "itemtype": 1,
+    "itemid": 1000,
+    "num": 5,
+    "probability": 270
+  },
+  {
+    "id": 1030,
+    "dropid": 902,
+    "itemtype": 1,
+    "itemid": 1000,
+    "num": 9,
+    "probability": 130
+  },
+  {
+    "id": 1037,
+    "dropid": 902,
+    "itemtype": 1,
+    "itemid": 101,
+    "num": 5,
+    "probability": 590
+  },
+  {
+    "id": 1038,
+    "dropid": 902,
+    "itemtype": 1,
+    "itemid": 101,
+    "num": 4,
+    "probability": 260
+  },
+  {
+    "id": 1039,
+    "dropid": 902,
+    "itemtype": 1,
+    "itemid": 101,
+    "num": 7,
+    "probability": 150
+  },
+  {
+    "id": 1040,
+    "dropid": 902,
+    "itemtype": 1,
+    "itemid": 102,
+    "num": 3,
+    "probability": 290
+  },
+  {
+    "id": 1041,
+    "dropid": 902,
+    "itemtype": 1,
+    "itemid": 102,
+    "num": 2,
+    "probability": 130
+  },
+  {
+    "id": 1042,
+    "dropid": 902,
+    "itemtype": 1,
+    "itemid": 102,
+    "num": 5,
+    "probability": 80
+  },
+  {
+    "id": 1043,
+    "dropid": 911,
+    "itemtype": 1,
+    "itemid": 1102,
+    "num": 5,
+    "probability": 1000
+  },
+  {
+    "id": 1044,
+    "dropid": 911,
+    "itemtype": 1,
+    "itemid": 1104,
+    "num": 5,
+    "probability": 1000
+  },
+  {
+    "id": 1045,
+    "dropid": 911,
+    "itemtype": 1,
+    "itemid": 1106,
+    "num": 5,
+    "probability": 1000
+  },
+  {
+    "id": 1046,
+    "dropid": 912,
+    "itemtype": 1,
+    "itemid": 1201,
+    "num": 6,
+    "probability": 1000
+  },
+  {
+    "id": 1047,
+    "dropid": 912,
+    "itemtype": 1,
+    "itemid": 1102,
+    "num": 6,
+    "probability": 1000
+  },
+  {
+    "id": 1048,
+    "dropid": 912,
+    "itemtype": 1,
+    "itemid": 1105,
+    "num": 6,
+    "probability": 1000
+  },
+  {
+    "id": 1049,
+    "dropid": 913,
+    "itemtype": 2,
+    "itemid": 10007,
+    "num": 1,
+    "probability": 400
+  },
+  {
+    "id": 1050,
+    "dropid": 913,
+    "itemtype": 2,
+    "itemid": 10005,
+    "num": 1,
+    "probability": 400
+  },
+  {
+    "id": 1051,
+    "dropid": 913,
+    "itemtype": 2,
+    "itemid": 10004,
+    "num": 1,
+    "probability": 400
+  },
+  {
+    "id": 1052,
+    "dropid": 914,
+    "itemtype": 2,
+    "itemid": 10006,
+    "num": 1,
+    "probability": 400
+  },
+  {
+    "id": 1053,
+    "dropid": 914,
+    "itemtype": 2,
+    "itemid": 10007,
+    "num": 1,
+    "probability": 400
+  },
+  {
+    "id": 1054,
+    "dropid": 914,
+    "itemtype": 2,
+    "itemid": 10005,
+    "num": 1,
+    "probability": 400
+  },
+  {
+    "id": 1055,
+    "dropid": 915,
+    "itemtype": 1,
+    "itemid": 1,
+    "num": 1,
+    "probability": 400
+  },
+  {
+    "id": 1056,
+    "dropid": 915,
+    "itemtype": 1,
+    "itemid": 2,
+    "num": 1,
+    "probability": 400
+  },
+  {
+    "id": 1057,
+    "dropid": 915,
+    "itemtype": 1,
+    "itemid": 3,
+    "num": 1,
+    "probability": 400
+  },
+  {
+    "id": 1058,
+    "dropid": 916,
+    "itemtype": 1,
+    "itemid": 4,
+    "num": 1,
+    "probability": 400
+  },
+  {
+    "id": 1059,
+    "dropid": 916,
+    "itemtype": 1,
+    "itemid": 5,
+    "num": 1,
+    "probability": 400
+  },
+  {
+    "id": 1060,
+    "dropid": 916,
+    "itemtype": 1,
+    "itemid": 6,
+    "num": 1,
+    "probability": 400
+  },
+  {
+    "id": 1061,
+    "dropid": 917,
+    "itemtype": 1,
+    "itemid": 7,
+    "num": 1,
+    "probability": 400
+  },
+  {
+    "id": 1062,
+    "dropid": 917,
+    "itemtype": 1,
+    "itemid": 8,
+    "num": 1,
+    "probability": 400
+  },
+  {
+    "id": 1063,
+    "dropid": 917,
+    "itemtype": 1,
+    "itemid": 101,
+    "num": 1,
+    "probability": 400
+  },
+  {
+    "id": 1064,
+    "dropid": 918,
+    "itemtype": 1,
+    "itemid": 102,
+    "num": 1,
+    "probability": 400
+  },
+  {
+    "id": 1065,
+    "dropid": 918,
+    "itemtype": 1,
+    "itemid": 1000,
+    "num": 1,
+    "probability": 400
+  }
+]

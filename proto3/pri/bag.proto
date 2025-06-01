@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+import "item.proto";
+
+package proto3;
+
+message BagResp {
+  repeated Item items = 1;
+}

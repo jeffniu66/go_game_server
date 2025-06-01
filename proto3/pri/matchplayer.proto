@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package proto3;
+
+enum PlayerRankEnum {
+    invalid_rank = 0; // 青铜
+    bronze_rank = 1; // 青铜
+    silver_rank = 2; // 白银
+    gold_rank = 3; // 黄金
+    platinum_rank = 4; // 铂金
+    diamond_rank = 5; // 钻石
+    starshine_rank = 6; // 星耀
+    king_rank = 7; // 王者
+}

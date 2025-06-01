@@ -1,0 +1,2113 @@
+[
+  {
+    "id": 1,
+    "gender": 1,
+    "type": 1,
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44001",
+    "vo": "bgm_44001"
+  },
+  {
+    "id": 2,
+    "gender": 1,
+    "type": 1,
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44002",
+    "vo": "bgm_44002"
+  },
+  {
+    "id": 3,
+    "gender": 1,
+    "type": 1,
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44003",
+    "vo": "bgm_44003"
+  },
+  {
+    "id": 4,
+    "gender": 1,
+    "type": 1,
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44004",
+    "vo": "bgm_44004"
+  },
+  {
+    "id": 5,
+    "gender": 1,
+    "type": 1,
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44005",
+    "vo": "bgm_44005"
+  },
+  {
+    "id": 6,
+    "gender": 1,
+    "type": 1,
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44006",
+    "vo": "bgm_44006"
+  },
+  {
+    "id": 7,
+    "gender": 1,
+    "type": 1,
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44007",
+    "vo": "bgm_44007"
+  },
+  {
+    "id": 8,
+    "gender": 1,
+    "type": 1,
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44008",
+    "vo": "bgm_44008"
+  },
+  {
+    "id": 9,
+    "gender": 1,
+    "type": 1,
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44009",
+    "vo": "bgm_44009"
+  },
+  {
+    "id": 10,
+    "gender": 1,
+    "type": 1,
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44010",
+    "vo": "bgm_44010"
+  },
+  {
+    "id": 101,
+    "gender": 1,
+    "type": 2,
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44101",
+    "vo": "bgm_44101"
+  },
+  {
+    "id": 102,
+    "gender": 1,
+    "type": 2,
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44102",
+    "vo": "bgm_44102"
+  },
+  {
+    "id": 103,
+    "gender": 1,
+    "type": 2,
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44103",
+    "vo": "bgm_44103"
+  },
+  {
+    "id": 104,
+    "gender": 1,
+    "type": 2,
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44104",
+    "vo": "bgm_44104"
+  },
+  {
+    "id": 105,
+    "gender": 1,
+    "type": 2,
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44105",
+    "vo": "bgm_44105"
+  },
+  {
+    "id": 106,
+    "gender": 1,
+    "type": 2,
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44106",
+    "vo": "bgm_44106"
+  },
+  {
+    "id": 107,
+    "gender": 1,
+    "type": 2,
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44107",
+    "vo": "bgm_44107"
+  },
+  {
+    "id": 108,
+    "gender": 1,
+    "type": 2,
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44108",
+    "vo": "bgm_44108"
+  },
+  {
+    "id": 109,
+    "gender": 1,
+    "type": 2,
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44109",
+    "vo": "bgm_44109"
+  },
+  {
+    "id": 110,
+    "gender": 1,
+    "type": 2,
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44110",
+    "vo": "bgm_44110"
+  },
+  {
+    "id": 111,
+    "gender": 1,
+    "type": 2,
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44111",
+    "vo": "bgm_44111"
+  },
+  {
+    "id": 114,
+    "gender": 1,
+    "type": 2,
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44114",
+    "vo": "bgm_44114"
+  },
+  {
+    "id": 201,
+    "gender": 1,
+    "type": 3,
+    "aidata_type": 0,
+    "data_number": 1,
+    "quicktext": "key_44201"
+  },
+  {
+    "id": 202,
+    "gender": 1,
+    "type": 3,
+    "aidata_type": 0,
+    "data_number": 1,
+    "quicktext": "key_44202"
+  },
+  {
+    "id": 203,
+    "gender": 1,
+    "type": 3,
+    "aidata_type": 0,
+    "data_number": 1,
+    "quicktext": "key_44203"
+  },
+  {
+    "id": 204,
+    "gender": 1,
+    "type": 3,
+    "aidata_type": 0,
+    "data_number": 1,
+    "quicktext": "key_44204"
+  },
+  {
+    "id": 205,
+    "gender": 1,
+    "type": 3,
+    "aidata_type": 0,
+    "data_number": 1,
+    "quicktext": "key_44205"
+  },
+  {
+    "id": 206,
+    "gender": 1,
+    "type": 3,
+    "aidata_type": 0,
+    "data_number": 1,
+    "quicktext": "key_44206"
+  },
+  {
+    "id": 301,
+    "gender": 2,
+    "type": 1,
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44301",
+    "vo": "bgm_44301"
+  },
+  {
+    "id": 302,
+    "gender": 2,
+    "type": 1,
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44302",
+    "vo": "bgm_44302"
+  },
+  {
+    "id": 303,
+    "gender": 2,
+    "type": 1,
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44303",
+    "vo": "bgm_44303"
+  },
+  {
+    "id": 304,
+    "gender": 2,
+    "type": 1,
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44304",
+    "vo": "bgm_44304"
+  },
+  {
+    "id": 305,
+    "gender": 2,
+    "type": 1,
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44305",
+    "vo": "bgm_44305"
+  },
+  {
+    "id": 306,
+    "gender": 2,
+    "type": 1,
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44306",
+    "vo": "bgm_44306"
+  },
+  {
+    "id": 307,
+    "gender": 2,
+    "type": 1,
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44307",
+    "vo": "bgm_44307"
+  },
+  {
+    "id": 308,
+    "gender": 2,
+    "type": 1,
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44308",
+    "vo": "bgm_44308"
+  },
+  {
+    "id": 309,
+    "gender": 2,
+    "type": 1,
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44309",
+    "vo": "bgm_44309"
+  },
+  {
+    "id": 310,
+    "gender": 2,
+    "type": 1,
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44310",
+    "vo": "bgm_44310"
+  },
+  {
+    "id": 401,
+    "gender": 2,
+    "type": 2,
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44401",
+    "vo": "bgm_44401"
+  },
+  {
+    "id": 402,
+    "gender": 2,
+    "type": 2,
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44402",
+    "vo": "bgm_44402"
+  },
+  {
+    "id": 403,
+    "gender": 2,
+    "type": 2,
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44403",
+    "vo": "bgm_44403"
+  },
+  {
+    "id": 404,
+    "gender": 2,
+    "type": 2,
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44404",
+    "vo": "bgm_44404"
+  },
+  {
+    "id": 405,
+    "gender": 2,
+    "type": 2,
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44405",
+    "vo": "bgm_44405"
+  },
+  {
+    "id": 406,
+    "gender": 2,
+    "type": 2,
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44406",
+    "vo": "bgm_44406"
+  },
+  {
+    "id": 407,
+    "gender": 2,
+    "type": 2,
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44407",
+    "vo": "bgm_44407"
+  },
+  {
+    "id": 408,
+    "gender": 2,
+    "type": 2,
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44408",
+    "vo": "bgm_44408"
+  },
+  {
+    "id": 409,
+    "gender": 2,
+    "type": 2,
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44409",
+    "vo": "bgm_44409"
+  },
+  {
+    "id": 410,
+    "gender": 2,
+    "type": 2,
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44410",
+    "vo": "bgm_44410"
+  },
+  {
+    "id": 411,
+    "gender": 2,
+    "type": 2,
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44411",
+    "vo": "bgm_44411"
+  },
+  {
+    "id": 414,
+    "gender": 2,
+    "type": 2,
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44414",
+    "vo": "bgm_44414"
+  },
+  {
+    "id": 501,
+    "gender": 2,
+    "type": 3,
+    "aidata_type": 0,
+    "data_number": 1,
+    "quicktext": "key_44501"
+  },
+  {
+    "id": 502,
+    "gender": 2,
+    "type": 3,
+    "aidata_type": 0,
+    "data_number": 1,
+    "quicktext": "key_44502"
+  },
+  {
+    "id": 503,
+    "gender": 2,
+    "type": 3,
+    "aidata_type": 0,
+    "data_number": 1,
+    "quicktext": "key_44503"
+  },
+  {
+    "id": 504,
+    "gender": 2,
+    "type": 3,
+    "aidata_type": 0,
+    "data_number": 1,
+    "quicktext": "key_44504"
+  },
+  {
+    "id": 505,
+    "gender": 2,
+    "type": 3,
+    "aidata_type": 0,
+    "data_number": 1,
+    "quicktext": "key_44505"
+  },
+  {
+    "id": 506,
+    "gender": 2,
+    "type": 3,
+    "aidata_type": 0,
+    "data_number": 1,
+    "quicktext": "key_44506"
+  },
+  {
+    "id": 601,
+    "gender": 3,
+    "type": 2,
+    "robottrigger": "6,10",
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44601"
+  },
+  {
+    "id": 602,
+    "gender": 3,
+    "type": 2,
+    "robottrigger": "6,10",
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44602"
+  },
+  {
+    "id": 603,
+    "gender": 3,
+    "type": 2,
+    "robottrigger": "6,10",
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44603"
+  },
+  {
+    "id": 604,
+    "gender": 3,
+    "type": 2,
+    "robottrigger": "6,10",
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44604"
+  },
+  {
+    "id": 605,
+    "gender": 3,
+    "type": 2,
+    "robottrigger": "6,10",
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44605"
+  },
+  {
+    "id": 606,
+    "gender": 3,
+    "type": 2,
+    "robottrigger": "6,10",
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44606"
+  },
+  {
+    "id": 607,
+    "gender": 3,
+    "type": 2,
+    "robottrigger": "6,10",
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44607"
+  },
+  {
+    "id": 608,
+    "gender": 3,
+    "type": 2,
+    "robottrigger": "6,10",
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44608"
+  },
+  {
+    "id": 609,
+    "gender": 3,
+    "type": 2,
+    "robottrigger": "6,10",
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44609"
+  },
+  {
+    "id": 610,
+    "gender": 3,
+    "type": 2,
+    "robottrigger": "6,10",
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44610"
+  },
+  {
+    "id": 611,
+    "gender": 3,
+    "type": 2,
+    "robottrigger": "6,10",
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44611"
+  },
+  {
+    "id": 612,
+    "gender": 3,
+    "type": 2,
+    "robottrigger": "6,10",
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44612"
+  },
+  {
+    "id": 613,
+    "gender": 3,
+    "type": 2,
+    "robottrigger": "6,10",
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44613"
+  },
+  {
+    "id": 614,
+    "gender": 3,
+    "type": 2,
+    "robottrigger": "6,10",
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44614"
+  },
+  {
+    "id": 615,
+    "gender": 3,
+    "type": 2,
+    "robottrigger": "6,10",
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44615"
+  },
+  {
+    "id": 616,
+    "gender": 3,
+    "type": 2,
+    "robottrigger": "6,10",
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44616"
+  },
+  {
+    "id": 617,
+    "gender": 3,
+    "type": 2,
+    "robottrigger": "6,10",
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44617"
+  },
+  {
+    "id": 618,
+    "gender": 3,
+    "type": 2,
+    "robottrigger": "6,10",
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44618"
+  },
+  {
+    "id": 619,
+    "gender": 3,
+    "type": 2,
+    "robottrigger": "6,10",
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44619"
+  },
+  {
+    "id": 620,
+    "gender": 3,
+    "type": 2,
+    "robottrigger": "6,10",
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44620"
+  },
+  {
+    "id": 621,
+    "gender": 3,
+    "type": 2,
+    "robottrigger": "6,10",
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44621"
+  },
+  {
+    "id": 622,
+    "gender": 3,
+    "type": 2,
+    "robottrigger": "6,10",
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44622"
+  },
+  {
+    "id": 623,
+    "gender": 3,
+    "type": 2,
+    "robottrigger": "6,10",
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44623"
+  },
+  {
+    "id": 624,
+    "gender": 3,
+    "type": 2,
+    "robottrigger": "6,10",
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44624"
+  },
+  {
+    "id": 625,
+    "gender": 3,
+    "type": 2,
+    "robottrigger": "6,10",
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44625"
+  },
+  {
+    "id": 626,
+    "gender": 3,
+    "type": 2,
+    "robottrigger": "6,10",
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44626"
+  },
+  {
+    "id": 627,
+    "gender": 3,
+    "type": 2,
+    "robottrigger": "6,10",
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44627"
+  },
+  {
+    "id": 628,
+    "gender": 3,
+    "type": 2,
+    "robottrigger": "6,10",
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44628"
+  },
+  {
+    "id": 629,
+    "gender": 3,
+    "type": 2,
+    "robottrigger": "6,10",
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44629"
+  },
+  {
+    "id": 630,
+    "gender": 3,
+    "type": 2,
+    "robottrigger": "6,10",
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44630"
+  },
+  {
+    "id": 631,
+    "gender": 3,
+    "type": 2,
+    "robottrigger": "6,10",
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44631"
+  },
+  {
+    "id": 632,
+    "gender": 3,
+    "type": 2,
+    "robottrigger": "6,10",
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44632"
+  },
+  {
+    "id": 633,
+    "gender": 3,
+    "type": 2,
+    "robottrigger": "6,10",
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44633"
+  },
+  {
+    "id": 634,
+    "gender": 3,
+    "type": 2,
+    "robottrigger": "6,10",
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44634"
+  },
+  {
+    "id": 701,
+    "gender": 3,
+    "type": 2,
+    "robottrigger": "2,5",
+    "aidata_type": 0,
+    "data_number": 1,
+    "quicktext": "key_44901"
+  },
+  {
+    "id": 702,
+    "gender": 3,
+    "type": 2,
+    "robottrigger": "2,5",
+    "aidata_type": 0,
+    "data_number": 1,
+    "quicktext": "key_44902"
+  },
+  {
+    "id": 703,
+    "gender": 3,
+    "type": 2,
+    "robottrigger": "2,5",
+    "aidata_type": 0,
+    "data_number": 1,
+    "quicktext": "key_44903"
+  },
+  {
+    "id": 704,
+    "gender": 3,
+    "type": 2,
+    "robottrigger": "2,5",
+    "aidata_type": 0,
+    "data_number": 1,
+    "quicktext": "key_44904"
+  },
+  {
+    "id": 705,
+    "gender": 3,
+    "type": 2,
+    "robottrigger": "2,5",
+    "aidata_type": 0,
+    "data_number": 1,
+    "quicktext": "key_44905"
+  },
+  {
+    "id": 706,
+    "gender": 3,
+    "type": 2,
+    "robottrigger": "2,5",
+    "aidata_type": 0,
+    "data_number": 1,
+    "quicktext": "key_44906"
+  },
+  {
+    "id": 707,
+    "gender": 3,
+    "type": 2,
+    "robottrigger": "2,5",
+    "aidata_type": 0,
+    "data_number": 1,
+    "quicktext": "key_44907"
+  },
+  {
+    "id": 708,
+    "gender": 3,
+    "type": 2,
+    "robottrigger": "2,5",
+    "aidata_type": 0,
+    "data_number": 1,
+    "quicktext": "key_44908"
+  },
+  {
+    "id": 709,
+    "gender": 3,
+    "type": 2,
+    "robottrigger": "2,5",
+    "aidata_type": 0,
+    "data_number": 1,
+    "quicktext": "key_44909"
+  },
+  {
+    "id": 710,
+    "gender": 3,
+    "type": 2,
+    "robottrigger": "2,5",
+    "aidata_type": 0,
+    "data_number": 1,
+    "quicktext": "key_44910"
+  },
+  {
+    "id": 711,
+    "gender": 3,
+    "type": 2,
+    "robottrigger": "2,5",
+    "aidata_type": 0,
+    "data_number": 1,
+    "quicktext": "key_44911"
+  },
+  {
+    "id": 712,
+    "gender": 3,
+    "type": 2,
+    "robottrigger": "2,5",
+    "aidata_type": 0,
+    "data_number": 1,
+    "quicktext": "key_44912"
+  },
+  {
+    "id": 713,
+    "gender": 3,
+    "type": 2,
+    "robottrigger": "2,5",
+    "aidata_type": 0,
+    "data_number": 1,
+    "quicktext": "key_44913"
+  },
+  {
+    "id": 714,
+    "gender": 3,
+    "type": 2,
+    "robottrigger": "2,5",
+    "aidata_type": 0,
+    "data_number": 1,
+    "quicktext": "key_44914"
+  },
+  {
+    "id": 715,
+    "gender": 3,
+    "type": 2,
+    "robottrigger": "2,5",
+    "aidata_type": 0,
+    "data_number": 1,
+    "quicktext": "key_44915"
+  },
+  {
+    "id": 716,
+    "gender": 3,
+    "type": 2,
+    "robottrigger": "2,5",
+    "aidata_type": 0,
+    "data_number": 1,
+    "quicktext": "key_44916"
+  },
+  {
+    "id": 717,
+    "gender": 3,
+    "type": 2,
+    "robottrigger": "2,5",
+    "aidata_type": 0,
+    "data_number": 1,
+    "quicktext": "key_44917"
+  },
+  {
+    "id": 801,
+    "gender": 3,
+    "type": 4,
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44701"
+  },
+  {
+    "id": 802,
+    "gender": 3,
+    "type": 4,
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44702"
+  },
+  {
+    "id": 803,
+    "gender": 3,
+    "type": 4,
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44703"
+  },
+  {
+    "id": 804,
+    "gender": 3,
+    "type": 4,
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44704"
+  },
+  {
+    "id": 805,
+    "gender": 3,
+    "type": 4,
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44705"
+  },
+  {
+    "id": 806,
+    "gender": 3,
+    "type": 4,
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44706"
+  },
+  {
+    "id": 807,
+    "gender": 3,
+    "type": 4,
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44707"
+  },
+  {
+    "id": 808,
+    "gender": 3,
+    "type": 4,
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44708"
+  },
+  {
+    "id": 809,
+    "gender": 3,
+    "type": 4,
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44709"
+  },
+  {
+    "id": 810,
+    "gender": 3,
+    "type": 4,
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44710"
+  },
+  {
+    "id": 811,
+    "gender": 3,
+    "type": 4,
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44711"
+  },
+  {
+    "id": 812,
+    "gender": 3,
+    "type": 4,
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44712"
+  },
+  {
+    "id": 813,
+    "gender": 3,
+    "type": 4,
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44713"
+  },
+  {
+    "id": 814,
+    "gender": 3,
+    "type": 4,
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44714"
+  },
+  {
+    "id": 815,
+    "gender": 3,
+    "type": 4,
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44715"
+  },
+  {
+    "id": 816,
+    "gender": 3,
+    "type": 4,
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44716"
+  },
+  {
+    "id": 817,
+    "gender": 3,
+    "type": 4,
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44717"
+  },
+  {
+    "id": 818,
+    "gender": 3,
+    "type": 4,
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44718"
+  },
+  {
+    "id": 819,
+    "gender": 3,
+    "type": 4,
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44719"
+  },
+  {
+    "id": 820,
+    "gender": 3,
+    "type": 4,
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44720"
+  },
+  {
+    "id": 821,
+    "gender": 3,
+    "type": 4,
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44721"
+  },
+  {
+    "id": 822,
+    "gender": 3,
+    "type": 4,
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44722"
+  },
+  {
+    "id": 823,
+    "gender": 3,
+    "type": 4,
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44723"
+  },
+  {
+    "id": 824,
+    "gender": 3,
+    "type": 4,
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44724"
+  },
+  {
+    "id": 825,
+    "gender": 3,
+    "type": 4,
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44725"
+  },
+  {
+    "id": 826,
+    "gender": 3,
+    "type": 4,
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44726"
+  },
+  {
+    "id": 827,
+    "gender": 3,
+    "type": 4,
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44727"
+  },
+  {
+    "id": 828,
+    "gender": 3,
+    "type": 4,
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44728"
+  },
+  {
+    "id": 829,
+    "gender": 3,
+    "type": 4,
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44729"
+  },
+  {
+    "id": 830,
+    "gender": 3,
+    "type": 4,
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44730"
+  },
+  {
+    "id": 831,
+    "gender": 3,
+    "type": 4,
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44731"
+  },
+  {
+    "id": 832,
+    "gender": 3,
+    "type": 4,
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44732"
+  },
+  {
+    "id": 833,
+    "gender": 3,
+    "type": 4,
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44733"
+  },
+  {
+    "id": 834,
+    "gender": 3,
+    "type": 4,
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44734"
+  },
+  {
+    "id": 835,
+    "gender": 3,
+    "type": 4,
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44735"
+  },
+  {
+    "id": 836,
+    "gender": 3,
+    "type": 4,
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44736"
+  },
+  {
+    "id": 837,
+    "gender": 3,
+    "type": 4,
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44737"
+  },
+  {
+    "id": 838,
+    "gender": 3,
+    "type": 4,
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44738"
+  },
+  {
+    "id": 839,
+    "gender": 3,
+    "type": 4,
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44739"
+  },
+  {
+    "id": 840,
+    "gender": 3,
+    "type": 4,
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44740"
+  },
+  {
+    "id": 841,
+    "gender": 3,
+    "type": 4,
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44741"
+  },
+  {
+    "id": 842,
+    "gender": 3,
+    "type": 4,
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44742"
+  },
+  {
+    "id": 843,
+    "gender": 3,
+    "type": 4,
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44743"
+  },
+  {
+    "id": 844,
+    "gender": 3,
+    "type": 4,
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44744"
+  },
+  {
+    "id": 845,
+    "gender": 3,
+    "type": 4,
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44745"
+  },
+  {
+    "id": 846,
+    "gender": 3,
+    "type": 4,
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44746"
+  },
+  {
+    "id": 847,
+    "gender": 3,
+    "type": 4,
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44747"
+  },
+  {
+    "id": 848,
+    "gender": 3,
+    "type": 4,
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44748"
+  },
+  {
+    "id": 849,
+    "gender": 3,
+    "type": 4,
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44749"
+  },
+  {
+    "id": 850,
+    "gender": 3,
+    "type": 4,
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44750"
+  },
+  {
+    "id": 851,
+    "gender": 3,
+    "type": 4,
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44751"
+  },
+  {
+    "id": 852,
+    "gender": 3,
+    "type": 4,
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44752"
+  },
+  {
+    "id": 853,
+    "gender": 3,
+    "type": 4,
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44753"
+  },
+  {
+    "id": 854,
+    "gender": 3,
+    "type": 4,
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44754"
+  },
+  {
+    "id": 855,
+    "gender": 3,
+    "type": 4,
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44755"
+  },
+  {
+    "id": 856,
+    "gender": 3,
+    "type": 4,
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44756"
+  },
+  {
+    "id": 857,
+    "gender": 3,
+    "type": 4,
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44757"
+  },
+  {
+    "id": 858,
+    "gender": 3,
+    "type": 4,
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44758"
+  },
+  {
+    "id": 859,
+    "gender": 3,
+    "type": 4,
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44759"
+  },
+  {
+    "id": 860,
+    "gender": 3,
+    "type": 4,
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44760"
+  },
+  {
+    "id": 861,
+    "gender": 3,
+    "type": 4,
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44761"
+  },
+  {
+    "id": 862,
+    "gender": 3,
+    "type": 4,
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44762"
+  },
+  {
+    "id": 863,
+    "gender": 3,
+    "type": 4,
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44763"
+  },
+  {
+    "id": 864,
+    "gender": 3,
+    "type": 4,
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44764"
+  },
+  {
+    "id": 865,
+    "gender": 3,
+    "type": 4,
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44765"
+  },
+  {
+    "id": 866,
+    "gender": 3,
+    "type": 4,
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44766"
+  },
+  {
+    "id": 867,
+    "gender": 3,
+    "type": 4,
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44767"
+  },
+  {
+    "id": 868,
+    "gender": 3,
+    "type": 4,
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44768"
+  },
+  {
+    "id": 869,
+    "gender": 3,
+    "type": 4,
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44769"
+  },
+  {
+    "id": 870,
+    "gender": 3,
+    "type": 4,
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44770"
+  },
+  {
+    "id": 871,
+    "gender": 3,
+    "type": 4,
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44771"
+  },
+  {
+    "id": 872,
+    "gender": 3,
+    "type": 4,
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44772"
+  },
+  {
+    "id": 873,
+    "gender": 3,
+    "type": 4,
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44773"
+  },
+  {
+    "id": 874,
+    "gender": 3,
+    "type": 4,
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44774"
+  },
+  {
+    "id": 875,
+    "gender": 3,
+    "type": 4,
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44775"
+  },
+  {
+    "id": 876,
+    "gender": 3,
+    "type": 4,
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44776"
+  },
+  {
+    "id": 877,
+    "gender": 3,
+    "type": 4,
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44777"
+  },
+  {
+    "id": 878,
+    "gender": 3,
+    "type": 4,
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44778"
+  },
+  {
+    "id": 879,
+    "gender": 3,
+    "type": 4,
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44779"
+  },
+  {
+    "id": 880,
+    "gender": 3,
+    "type": 4,
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44780"
+  },
+  {
+    "id": 881,
+    "gender": 3,
+    "type": 4,
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44781"
+  },
+  {
+    "id": 882,
+    "gender": 3,
+    "type": 4,
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44782"
+  },
+  {
+    "id": 883,
+    "gender": 3,
+    "type": 4,
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44783"
+  },
+  {
+    "id": 884,
+    "gender": 3,
+    "type": 4,
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44784"
+  },
+  {
+    "id": 885,
+    "gender": 3,
+    "type": 4,
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44785"
+  },
+  {
+    "id": 886,
+    "gender": 3,
+    "type": 4,
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44786"
+  },
+  {
+    "id": 887,
+    "gender": 3,
+    "type": 4,
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44787"
+  },
+  {
+    "id": 888,
+    "gender": 3,
+    "type": 4,
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44788"
+  },
+  {
+    "id": 889,
+    "gender": 3,
+    "type": 4,
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44789"
+  },
+  {
+    "id": 890,
+    "gender": 3,
+    "type": 4,
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44790"
+  },
+  {
+    "id": 891,
+    "gender": 3,
+    "type": 4,
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44791"
+  },
+  {
+    "id": 892,
+    "gender": 3,
+    "type": 4,
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44792"
+  },
+  {
+    "id": 893,
+    "gender": 3,
+    "type": 4,
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44793"
+  },
+  {
+    "id": 894,
+    "gender": 3,
+    "type": 4,
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44794"
+  },
+  {
+    "id": 895,
+    "gender": 3,
+    "type": 4,
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44795"
+  },
+  {
+    "id": 896,
+    "gender": 3,
+    "type": 4,
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44796"
+  },
+  {
+    "id": 897,
+    "gender": 3,
+    "type": 4,
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44797"
+  },
+  {
+    "id": 898,
+    "gender": 3,
+    "type": 4,
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44798"
+  },
+  {
+    "id": 899,
+    "gender": 3,
+    "type": 4,
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44799"
+  },
+  {
+    "id": 900,
+    "gender": 3,
+    "type": 4,
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44800"
+  },
+  {
+    "id": 901,
+    "gender": 3,
+    "type": 4,
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44801"
+  },
+  {
+    "id": 902,
+    "gender": 3,
+    "type": 4,
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44802"
+  },
+  {
+    "id": 903,
+    "gender": 3,
+    "type": 4,
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44803"
+  },
+  {
+    "id": 904,
+    "gender": 3,
+    "type": 4,
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44804"
+  },
+  {
+    "id": 905,
+    "gender": 3,
+    "type": 4,
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44805"
+  },
+  {
+    "id": 906,
+    "gender": 3,
+    "type": 4,
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44806"
+  },
+  {
+    "id": 907,
+    "gender": 3,
+    "type": 4,
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44807"
+  },
+  {
+    "id": 908,
+    "gender": 3,
+    "type": 4,
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44808"
+  },
+  {
+    "id": 909,
+    "gender": 3,
+    "type": 4,
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44809"
+  },
+  {
+    "id": 910,
+    "gender": 3,
+    "type": 4,
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44810"
+  },
+  {
+    "id": 911,
+    "gender": 3,
+    "type": 4,
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44811"
+  },
+  {
+    "id": 912,
+    "gender": 3,
+    "type": 4,
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44812"
+  },
+  {
+    "id": 913,
+    "gender": 3,
+    "type": 4,
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44813"
+  },
+  {
+    "id": 914,
+    "gender": 3,
+    "type": 4,
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44814"
+  },
+  {
+    "id": 915,
+    "gender": 3,
+    "type": 4,
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44815"
+  },
+  {
+    "id": 916,
+    "gender": 3,
+    "type": 4,
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44816"
+  },
+  {
+    "id": 917,
+    "gender": 3,
+    "type": 4,
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44817"
+  },
+  {
+    "id": 918,
+    "gender": 3,
+    "type": 4,
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44818"
+  },
+  {
+    "id": 919,
+    "gender": 3,
+    "type": 4,
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44819"
+  },
+  {
+    "id": 920,
+    "gender": 3,
+    "type": 4,
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44820"
+  },
+  {
+    "id": 921,
+    "gender": 3,
+    "type": 4,
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44821"
+  },
+  {
+    "id": 922,
+    "gender": 3,
+    "type": 4,
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44822"
+  },
+  {
+    "id": 923,
+    "gender": 3,
+    "type": 4,
+    "aidata_type": 0,
+    "data_number": 0,
+    "quicktext": "key_44823"
+  },
+  {
+    "id": 1001,
+    "gender": 3,
+    "type": 4,
+    "aidata_type": 1,
+    "data_number": 0,
+    "quicktext": "key_45001"
+  },
+  {
+    "id": 1002,
+    "gender": 3,
+    "type": 4,
+    "aidata_type": 1,
+    "data_number": 0,
+    "quicktext": "key_45002"
+  },
+  {
+    "id": 1003,
+    "gender": 3,
+    "type": 4,
+    "aidata_type": 1,
+    "data_number": 0,
+    "quicktext": "key_45003"
+  },
+  {
+    "id": 1004,
+    "gender": 3,
+    "type": 4,
+    "aidata_type": 1,
+    "data_number": 0,
+    "quicktext": "key_45004"
+  },
+  {
+    "id": 1005,
+    "gender": 3,
+    "type": 4,
+    "aidata_type": 1,
+    "data_number": 0,
+    "quicktext": "key_45005"
+  },
+  {
+    "id": 1006,
+    "gender": 3,
+    "type": 4,
+    "aidata_type": 1,
+    "data_number": 0,
+    "quicktext": "key_45006"
+  },
+  {
+    "id": 1007,
+    "gender": 3,
+    "type": 4,
+    "aidata_type": 1,
+    "data_number": 0,
+    "quicktext": "key_45007"
+  },
+  {
+    "id": 1008,
+    "gender": 3,
+    "type": 4,
+    "aidata_type": 1,
+    "data_number": 0,
+    "quicktext": "key_45008"
+  },
+  {
+    "id": 1009,
+    "gender": 3,
+    "type": 4,
+    "aidata_type": 1,
+    "data_number": 0,
+    "quicktext": "key_45009"
+  },
+  {
+    "id": 1010,
+    "gender": 3,
+    "type": 4,
+    "aidata_type": 1,
+    "data_number": 0,
+    "quicktext": "key_45010"
+  },
+  {
+    "id": 1011,
+    "gender": 3,
+    "type": 4,
+    "aidata_type": 1,
+    "data_number": 0,
+    "quicktext": "key_45011"
+  },
+  {
+    "id": 1012,
+    "gender": 3,
+    "type": 4,
+    "aidata_type": 1,
+    "data_number": 0,
+    "quicktext": "key_45012"
+  },
+  {
+    "id": 1013,
+    "gender": 3,
+    "type": 4,
+    "aidata_type": 1,
+    "data_number": 0,
+    "quicktext": "key_45013"
+  },
+  {
+    "id": 1014,
+    "gender": 3,
+    "type": 4,
+    "aidata_type": 1,
+    "data_number": 0,
+    "quicktext": "key_45014"
+  },
+  {
+    "id": 1015,
+    "gender": 3,
+    "type": 4,
+    "aidata_type": 1,
+    "data_number": 0,
+    "quicktext": "key_45015"
+  },
+  {
+    "id": 1016,
+    "gender": 3,
+    "type": 4,
+    "aidata_type": 1,
+    "data_number": 0,
+    "quicktext": "key_45016"
+  },
+  {
+    "id": 1017,
+    "gender": 3,
+    "type": 4,
+    "aidata_type": 1,
+    "data_number": 0,
+    "quicktext": "key_45017"
+  },
+  {
+    "id": 1018,
+    "gender": 3,
+    "type": 4,
+    "aidata_type": 1,
+    "data_number": 0,
+    "quicktext": "key_45018"
+  },
+  {
+    "id": 1019,
+    "gender": 3,
+    "type": 4,
+    "aidata_type": 1,
+    "data_number": 0,
+    "quicktext": "key_45019"
+  },
+  {
+    "id": 1020,
+    "gender": 3,
+    "type": 4,
+    "aidata_type": 1,
+    "data_number": 0,
+    "quicktext": "key_45020"
+  },
+  {
+    "id": 1021,
+    "gender": 3,
+    "type": 4,
+    "aidata_type": 1,
+    "data_number": 0,
+    "quicktext": "key_45021"
+  },
+  {
+    "id": 1022,
+    "gender": 3,
+    "type": 4,
+    "aidata_type": 1,
+    "data_number": 0,
+    "quicktext": "key_45022"
+  }
+]

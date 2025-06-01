@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "relationid": "3"
+  },
+  {
+    "id": 2,
+    "relationid": "4"
+  },
+  {
+    "id": 3,
+    "relationid": "1|5"
+  },
+  {
+    "id": 4,
+    "relationid": "2|6"
+  },
+  {
+    "id": 5,
+    "relationid": "3"
+  },
+  {
+    "id": 6,
+    "relationid": "4"
+  }
+]

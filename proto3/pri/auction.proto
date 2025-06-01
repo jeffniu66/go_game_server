@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+import "enumtype.proto";
+
+package proto3;
+
+message AuctionReq {
+
+}
+
+message AuctionResp {
+  ErrEnum errNum = 1; // 返回状态 1成功
+  int32 user_id = 2; // 最终出价玩家id
+  string user_name = 3; // 最终出价玩家角色名
+  int32 cur_price = 4; // 当前价格
+  int32 gold = 5; // 玩家金币数
+}

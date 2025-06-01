@@ -1,0 +1,47 @@
+syntax = "proto3";
+
+import "enumtype.proto";
+
+package proto3;
+
+message Item {
+  int32 id = 1;
+  int32 num = 2;
+}
+
+message ItemResp {
+  repeated Item items = 1;
+}
+
+// 道具出售
+message SellItemReq {
+  int32 item_id = 1;
+}
+
+message SellItemResp {
+  ErrEnum errNum = 1; // 返回状态 1成功
+  int32 gold = 2; // 玩家剩余金币数
+  int32 item_id = 3;
+}
+
+// 使用幸运卡（走房间pid，所以不跟使用背包道具合并）
+message UseLuckyCardReq {
+  int32 item_id = 1;
+  int32 item_num = 2;
+}
+
+message UseLuckyCardResp {
+  ErrEnum errNum = 1; // 返回状态 1成功
+  int32 item_id = 2;
+  int32 left_num = 3; // 剩余数量
+}
+
+// 使用背包道具-所有可以放背包的道具都可以使用这个协议
+message UseBagItemReq {
+    Item item = 1;
+}
+
+message UseBagItemResp {
+  ErrEnum errNum = 1; // 返回状态 1成功
+  Item item = 2;
+}

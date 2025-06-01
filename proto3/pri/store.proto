@@ -1,0 +1,64 @@
+syntax = "proto3";
+
+import "enumtype.proto";
+
+package proto3;
+
+// 商店请求
+message StoreReq {
+}
+
+// 商店响应
+message StoreResp {
+  int32 advance_box_use_times = 1; // 高级宝箱使用次数
+  int32 advance_box_end_time = 2; // 高级宝箱倒计时结束时间
+  int32 mys_skin_buy_times = 3; // 神秘皮肤购买次数
+  int32 mys_skin_end_time = 4; // 神秘皮肤倒计时结束时间
+  int32 mys_skin_chip_id = 5; // 神秘皮肤碎片id
+  int32 free_skin_buy_times = 6; // 免费皮肤购买次数
+  int32 free_skin_end_time = 7; // 免费皮肤倒计时结束时间
+  int32 free_skin_chip_id = 8; // 免费皮肤碎片id
+  int32 free_gold_buy_times = 9; // 免费金币购买次数
+  int32 free_gold_end_time = 10; // 免费金币倒计时结束时间
+}
+
+// 开宝箱请求
+message OpenBoxReq {
+  int32 box_id = 1; // 宝箱id
+}
+
+// 开宝箱响应
+message OpenBoxResp {
+  ErrEnum errNum = 1; // 返回状态 1成功
+  int32 gold = 2; // 玩家剩余金币数
+  int32 use_ad_num = 3; // 使用广告数
+}
+
+// 免费商品请求-看广告获得
+message FreeItemReq {
+  ItemTypeEnum item_type = 1; // 2-金币,4-皮肤
+}
+
+// 免费金币响应
+message FreeItemResp {
+  ErrEnum errNum = 1; // 返回状态 1成功
+  ItemTypeEnum item_type = 2; // 2-金币,4-皮肤
+  int32 gold = 3; // 玩家剩余金币数
+  int32 use_ad_num = 4; // 使用广告数
+  int32 next_chip_id = 5; // 下一个广告皮肤碎片id -1表示都拥有了
+}
+
+// 购买道具
+message BuyItemsReq {
+  ItemTypeEnum item_type = 1; // 1-道具,4-皮肤
+  int32 item_id = 2;
+}
+
+// 购买道具响应
+message BuyItemsResp {
+  ErrEnum errNum = 1; // 返回状态 1成功
+  ItemTypeEnum item_type = 2; // 1-道具,4-皮肤
+  int32 gold = 3; // 玩家剩余金币数
+  int32 gemstone = 4; // 剩余宝石数
+  int32 mys_skin_buy_times = 5; // 神秘皮肤购买次数
+}

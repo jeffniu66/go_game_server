@@ -1,0 +1,14 @@
+syntax = "proto3";
+package Server.Config;
+
+// key:["Id"]
+message CfgPlayerAttr{
+	int32 Id = 1;		//唯一id
+	int32 InitData = 2;		//初始值
+	int32 IncData = 3;		//增量值
+	int32 MaxData = 4;		//最大值
+}
+
+message PlayerAttrConfigData{
+	repeated CfgPlayerAttr config = 1;
+}

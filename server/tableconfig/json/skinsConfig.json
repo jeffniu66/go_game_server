@@ -1,0 +1,31 @@
+[
+  {
+    "id": 1,
+    "storetype": 1,
+    "dropid": 911,
+    "type": 4,
+    "limit": 20,
+    "price": 10
+  },
+  {
+    "id": 2,
+    "storetype": 2,
+    "dropid": 912,
+    "skinid": 1102,
+    "collectnum": 180
+  },
+  {
+    "id": 3,
+    "storetype": 2,
+    "dropid": 912,
+    "skinid": 1201,
+    "collectnum": 180
+  },
+  {
+    "id": 4,
+    "storetype": 2,
+    "dropid": 912,
+    "skinid": 1105,
+    "collectnum": 180
+  }
+]

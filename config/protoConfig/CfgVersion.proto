@@ -1,0 +1,13 @@
+syntax = "proto3";
+package Server.Config;
+
+// key:["Id"]
+message CfgVersion{
+	int32 Id = 1;		//唯一id
+	int32 BigVersion = 2;		//大版本号
+	int32 SmallVersion = 3;		//小版本号
+}
+
+message VersionConfigData{
+	repeated CfgVersion config = 1;
+}

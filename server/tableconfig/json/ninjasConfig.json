@@ -1,0 +1,497 @@
+[
+  {
+    "id": 1,
+    "ninjalevel": 1,
+    "star": 1,
+    "prev": 1,
+    "next": 2,
+    "neednum": 100,
+    "reward": "1,100|2,100"
+  },
+  {
+    "id": 2,
+    "ninjalevel": 1,
+    "star": 2,
+    "prev": 1,
+    "next": 3,
+    "neednum": 200,
+    "reward": "1,100|2,100"
+  },
+  {
+    "id": 3,
+    "ninjalevel": 1,
+    "star": 3,
+    "prev": 2,
+    "next": 4,
+    "neednum": 300,
+    "reward": "1,100|2,100"
+  },
+  {
+    "id": 4,
+    "ninjalevel": 1,
+    "star": 4,
+    "prev": 3,
+    "next": 5,
+    "neednum": 400,
+    "reward": "1,100|2,100"
+  },
+  {
+    "id": 5,
+    "ninjalevel": 1,
+    "star": 5,
+    "prev": 4,
+    "next": 11,
+    "neednum": 500,
+    "reward": "1,100|2,100"
+  },
+  {
+    "id": 11,
+    "ninjalevel": 2,
+    "star": 1,
+    "prev": 5,
+    "next": 12,
+    "neednum": 600,
+    "reward": "1,100|2,100"
+  },
+  {
+    "id": 12,
+    "ninjalevel": 2,
+    "star": 2,
+    "prev": 11,
+    "next": 13,
+    "neednum": 700,
+    "reward": "1,100|2,100"
+  },
+  {
+    "id": 13,
+    "ninjalevel": 2,
+    "star": 3,
+    "prev": 12,
+    "next": 14,
+    "neednum": 800,
+    "reward": "1,100|2,100"
+  },
+  {
+    "id": 14,
+    "ninjalevel": 2,
+    "star": 4,
+    "prev": 13,
+    "next": 15,
+    "neednum": 900,
+    "reward": "1,100|2,100"
+  },
+  {
+    "id": 15,
+    "ninjalevel": 2,
+    "star": 5,
+    "prev": 14,
+    "next": 21,
+    "neednum": 1000,
+    "reward": "1,100|2,100"
+  },
+  {
+    "id": 21,
+    "ninjalevel": 3,
+    "star": 1,
+    "prev": 15,
+    "next": 22,
+    "neednum": 1100,
+    "reward": "1,100|2,100"
+  },
+  {
+    "id": 22,
+    "ninjalevel": 3,
+    "star": 2,
+    "prev": 21,
+    "next": 23,
+    "neednum": 1200,
+    "reward": "1,100|2,100"
+  },
+  {
+    "id": 23,
+    "ninjalevel": 3,
+    "star": 3,
+    "prev": 22,
+    "next": 24,
+    "neednum": 1300,
+    "reward": "1,100|2,100"
+  },
+  {
+    "id": 24,
+    "ninjalevel": 3,
+    "star": 4,
+    "prev": 23,
+    "next": 25,
+    "neednum": 1400,
+    "reward": "1,100|2,100"
+  },
+  {
+    "id": 25,
+    "ninjalevel": 3,
+    "star": 5,
+    "prev": 24,
+    "next": 31,
+    "neednum": 1500,
+    "reward": "1,100|2,100"
+  },
+  {
+    "id": 31,
+    "ninjalevel": 4,
+    "star": 1,
+    "prev": 25,
+    "next": 32,
+    "neednum": 1600,
+    "reward": "1,100|2,100"
+  },
+  {
+    "id": 32,
+    "ninjalevel": 4,
+    "star": 2,
+    "prev": 31,
+    "next": 33,
+    "neednum": 1700,
+    "reward": "1,100|2,100"
+  },
+  {
+    "id": 33,
+    "ninjalevel": 4,
+    "star": 3,
+    "prev": 32,
+    "next": 34,
+    "neednum": 1800,
+    "reward": "1,100|2,100"
+  },
+  {
+    "id": 34,
+    "ninjalevel": 4,
+    "star": 4,
+    "prev": 33,
+    "next": 35,
+    "neednum": 1900,
+    "reward": "1,100|2,100"
+  },
+  {
+    "id": 35,
+    "ninjalevel": 4,
+    "star": 5,
+    "prev": 34,
+    "next": 41,
+    "neednum": 2000,
+    "reward": "1,100|2,100"
+  },
+  {
+    "id": 41,
+    "ninjalevel": 5,
+    "star": 1,
+    "prev": 35,
+    "next": 42,
+    "neednum": 2100,
+    "reward": "1,100|2,100"
+  },
+  {
+    "id": 42,
+    "ninjalevel": 5,
+    "star": 2,
+    "prev": 41,
+    "next": 43,
+    "neednum": 2200,
+    "reward": "1,100|2,100"
+  },
+  {
+    "id": 43,
+    "ninjalevel": 5,
+    "star": 3,
+    "prev": 42,
+    "next": 44,
+    "neednum": 2300,
+    "reward": "1,100|2,100"
+  },
+  {
+    "id": 44,
+    "ninjalevel": 5,
+    "star": 4,
+    "prev": 43,
+    "next": 45,
+    "neednum": 2400,
+    "reward": "1,100|2,100"
+  },
+  {
+    "id": 45,
+    "ninjalevel": 5,
+    "star": 5,
+    "prev": 44,
+    "next": 51,
+    "neednum": 2500,
+    "reward": "1,100|2,100"
+  },
+  {
+    "id": 51,
+    "ninjalevel": 6,
+    "star": 1,
+    "prev": 45,
+    "next": 52,
+    "neednum": 2600,
+    "reward": "1,100|2,100"
+  },
+  {
+    "id": 52,
+    "ninjalevel": 6,
+    "star": 2,
+    "prev": 51,
+    "next": 53,
+    "neednum": 2700,
+    "reward": "1,100|2,100"
+  },
+  {
+    "id": 53,
+    "ninjalevel": 6,
+    "star": 3,
+    "prev": 52,
+    "next": 54,
+    "neednum": 2800,
+    "reward": "1,100|2,100"
+  },
+  {
+    "id": 54,
+    "ninjalevel": 6,
+    "star": 4,
+    "prev": 53,
+    "next": 55,
+    "neednum": 2900,
+    "reward": "1,100|2,100"
+  },
+  {
+    "id": 55,
+    "ninjalevel": 6,
+    "star": 5,
+    "prev": 54,
+    "next": 61,
+    "neednum": 3000,
+    "reward": "1,100|2,100"
+  },
+  {
+    "id": 61,
+    "ninjalevel": 7,
+    "star": 1,
+    "prev": 55,
+    "next": 62,
+    "neednum": 3100,
+    "reward": "1,100|2,100"
+  },
+  {
+    "id": 62,
+    "ninjalevel": 7,
+    "star": 2,
+    "prev": 61,
+    "next": 63,
+    "neednum": 3200,
+    "reward": "1,100|2,100"
+  },
+  {
+    "id": 63,
+    "ninjalevel": 7,
+    "star": 3,
+    "prev": 62,
+    "next": 64,
+    "neednum": 3300,
+    "reward": "1,100|2,100"
+  },
+  {
+    "id": 64,
+    "ninjalevel": 7,
+    "star": 4,
+    "prev": 63,
+    "next": 65,
+    "neednum": 3400,
+    "reward": "1,100|2,100"
+  },
+  {
+    "id": 65,
+    "ninjalevel": 7,
+    "star": 5,
+    "prev": 64,
+    "next": 71,
+    "neednum": 3500,
+    "reward": "1,100|2,100"
+  },
+  {
+    "id": 71,
+    "ninjalevel": 8,
+    "star": 1,
+    "prev": 65,
+    "next": 72,
+    "neednum": 3600,
+    "reward": "1,100|2,100"
+  },
+  {
+    "id": 72,
+    "ninjalevel": 8,
+    "star": 2,
+    "prev": 71,
+    "next": 73,
+    "neednum": 3700,
+    "reward": "1,100|2,100"
+  },
+  {
+    "id": 73,
+    "ninjalevel": 8,
+    "star": 3,
+    "prev": 72,
+    "next": 74,
+    "neednum": 3800,
+    "reward": "1,100|2,100"
+  },
+  {
+    "id": 74,
+    "ninjalevel": 8,
+    "star": 4,
+    "prev": 73,
+    "next": 75,
+    "neednum": 3900,
+    "reward": "1,100|2,100"
+  },
+  {
+    "id": 75,
+    "ninjalevel": 8,
+    "star": 5,
+    "prev": 74,
+    "next": 81,
+    "neednum": 4000,
+    "reward": "1,100|2,100"
+  },
+  {
+    "id": 81,
+    "ninjalevel": 9,
+    "star": 1,
+    "prev": 75,
+    "next": 82,
+    "neednum": 4100,
+    "reward": "1,100|2,100"
+  },
+  {
+    "id": 82,
+    "ninjalevel": 9,
+    "star": 2,
+    "prev": 81,
+    "next": 83,
+    "neednum": 4200,
+    "reward": "1,100|2,100"
+  },
+  {
+    "id": 83,
+    "ninjalevel": 9,
+    "star": 3,
+    "prev": 82,
+    "next": 84,
+    "neednum": 4300,
+    "reward": "1,100|2,100"
+  },
+  {
+    "id": 84,
+    "ninjalevel": 9,
+    "star": 4,
+    "prev": 83,
+    "next": 85,
+    "neednum": 4400,
+    "reward": "1,100|2,100"
+  },
+  {
+    "id": 85,
+    "ninjalevel": 9,
+    "star": 5,
+    "prev": 84,
+    "next": 91,
+    "neednum": 4500,
+    "reward": "1,100|2,100"
+  },
+  {
+    "id": 91,
+    "ninjalevel": 10,
+    "star": 1,
+    "prev": 85,
+    "next": 92,
+    "neednum": 4600,
+    "reward": "1,100|2,100"
+  },
+  {
+    "id": 92,
+    "ninjalevel": 10,
+    "star": 2,
+    "prev": 91,
+    "next": 93,
+    "neednum": 4700,
+    "reward": "1,100|2,100"
+  },
+  {
+    "id": 93,
+    "ninjalevel": 10,
+    "star": 3,
+    "prev": 92,
+    "next": 94,
+    "neednum": 4800,
+    "reward": "1,100|2,100"
+  },
+  {
+    "id": 94,
+    "ninjalevel": 10,
+    "star": 4,
+    "prev": 93,
+    "next": 95,
+    "neednum": 4900,
+    "reward": "1,100|2,100"
+  },
+  {
+    "id": 95,
+    "ninjalevel": 10,
+    "star": 5,
+    "prev": 94,
+    "next": 101,
+    "neednum": 5000,
+    "reward": "1,100|2,100"
+  },
+  {
+    "id": 101,
+    "ninjalevel": 11,
+    "star": 1,
+    "prev": 95,
+    "next": 102,
+    "neednum": 5100,
+    "reward": "1,100|2,100"
+  },
+  {
+    "id": 102,
+    "ninjalevel": 11,
+    "star": 2,
+    "prev": 101,
+    "next": 103,
+    "neednum": 5200,
+    "reward": "1,100|2,100"
+  },
+  {
+    "id": 103,
+    "ninjalevel": 11,
+    "star": 3,
+    "prev": 102,
+    "next": 104,
+    "neednum": 5300,
+    "reward": "1,100|2,100"
+  },
+  {
+    "id": 104,
+    "ninjalevel": 11,
+    "star": 4,
+    "prev": 103,
+    "next": 105,
+    "neednum": 5400,
+    "reward": "1,100|2,100"
+  },
+  {
+    "id": 105,
+    "ninjalevel": 11,
+    "star": 5,
+    "prev": 104,
+    "next": 105,
+    "neednum": 5500,
+    "reward": "1,100|2,100"
+  }
+]

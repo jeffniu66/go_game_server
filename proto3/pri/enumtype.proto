@@ -1,0 +1,585 @@
+syntax = "proto3";
+
+package proto3;
+
+/*
+enum RankEnum {
+  Rank_Pass = 0;
+  Rank_Power = 1;    // 个人排行榜
+  Rank_Ally = 2;    // 同盟排行榜
+  Rank_PowerActivity = 3;    // 势力活动排行榜
+  Rank_AllyPowerActivity = 4;    // 同盟势力活动排行榜
+}
+
+enum BuildEnum {
+  Build_Pass = 0;
+  Build_Lock = 1;    // 解锁
+  Build_Level = 2;    // 升级
+  Build_Produce = 3;    // 点击收割资源田
+}
+
+enum ScienceEnum {
+  Science_Pass = 0;
+  Science_Level = 1;    // 科技升级
+  Science_Level_cancel = 2;    // 取消科技升级
+  Science_Speed = 3;    // 科技立即完成
+}
+
+enum WarMailTypeEnum {
+  War_Type_Pass = 0;
+  War_Type_Player = 1;    // 个人战报
+  War_Type_Store = 2;    // 收藏战报
+}
+
+enum AllyMailTypeEnum {
+  War_Ally_Pass = 0;    // 全部
+  War_Ally_Attack = 1;    // 攻击
+  War_Ally_Defend = 2;    // 防守
+  War_Ally_City = 3;    // 攻城
+}
+
+enum WarMailEnum {
+  War_Mail_Pass = 0;
+  War_Mail_Player_Open = 1;    // 打开个人战报详情
+  War_Mail_Ally_Open = 2;    // 打开同盟战报详情
+  War_Mail_Player_Store = 3;    // 收藏个人战报
+  War_Mail_Ally_Store = 4;    // 收藏同盟战报
+  War_Mail_Delete = 5;    // 删除个人战报
+  War_Mail_NoStore = 6;    // 取消收藏战报（个人和同盟一样的操作）
+  War_Mail_Store_Open = 7;    // 打开收藏战报详情
+}
+
+enum AllyEnum {
+  Ally_Pass = 0;
+  Ally_List = 1;    // 展示所有同盟列表
+  Ally_Info = 2;    // 展示同盟信息
+  Ally_Members = 3;    // 展示自己的同盟成员列表
+  Ally_RequestList = 4;    // 展示自己的申请列表
+  Ally_Search = 5;    // 搜索同盟
+
+  Ally_XXX = 6;    // 废弃，可以替换新的
+  Ally_Msg = 7;    // 修改同盟公告
+  Ally_Request = 8;    // 申请加入公会
+  Ally_Accept = 9;    // 管理员同意加入
+  Ally_Reject = 10;   // 管理员拒绝加入
+  Ally_Kick = 11;   // 管理员踢人
+  Ally_Quit = 12;   // 自己退出
+
+  Ally_Invite = 13;   // 邀请入盟
+  Ally_Change = 14;   // 禅让盟主
+  Ally_Change_Cancel = 15;   // 取消禅让盟主
+  Ally_Invite_Accept = 16;   // 同意入盟
+  Ally_Invite_Reject = 17;   // 拒绝入盟
+
+  Ally_BreakUp = 18;   // 同盟解散
+  Ally_BreakUp_Cancel = 19;   // 取消同盟解散
+  Ally_Icon = 20;   // 修改徽记
+  Ally_Audit = 21;   // 修改审核设置
+  Ally_Rename = 22;   // 同盟改名
+}
+
+enum LotteryEnum {
+  Lottery_Pass = 0;
+  Lottery_Gold = 1;    // 金币抽卡
+  Lottery_Diamond = 2;    // 钻石抽卡
+  Lottery_World_1 = 3;    // 天下大事1抽卡
+  Lottery_World_2 = 4;    // 天下大事2抽卡
+  Lottery_World_3 = 5;    // 天下大事3抽卡
+  Lottery_World_4 = 6;    // 天下大事4抽卡
+  Lottery_World_5 = 7;    // 天下大事5抽卡
+  Lottery_World_6 = 8;    // 天下大事6抽卡
+  Lottery_World_7 = 9;    // 天下大事7抽卡
+  Lottery_World_8 = 10;   // 天下大事8抽卡
+  Lottery_World_9 = 11;   // 天下大事9抽卡
+  Lottery_World_10 = 12;   // 天下大事10抽卡
+  Lottery_Incident_101 = 101;  // 地块事件1抽卡
+  Lottery_Incident_102 = 102;  // 地块事件2抽卡
+  Lottery_Incident_103 = 103;  // 地块事件3抽卡
+  Lottery_Incident_104 = 104;  // 地块事件4抽卡
+  Lottery_Incident_105 = 105;  // 地块事件5抽卡
+
+  Lottery_Section_Power = 110;  // 战役能量连抽
+}
+
+enum WorldEnum {
+  World_Pass = 0;
+  World_Attack = 1;    // 出征
+  World_Cancel_Attack = 2;    // 撤军
+  World_Farm = 3;    // 屯田
+  World_Cancel_Farm = 4;    // 取消屯田
+  World_GiveUp_Land = 5;    // 放弃地块
+  World_Cancel_GiveUp_Land = 6;   // 取消放弃地块
+  World_Garrison = 7;    // 驻守
+  World_Cancel_Garrison = 8;    // 取消驻守
+  World_Transfer = 9;    // 调动
+  World_Cancel_Transfer = 10;   // 取消调动
+  World_Return = 11;   // 返回
+  World_Sweeping = 12;   // 扫荡
+  World_Rescue = 13;   // 解救
+  World_Investigate = 14;   // 侦查
+  World_IncidentGoblin = 15;   // 打哥布林事件
+  World_AtOnceMarchBack = 16;   // 立即返回
+  World_AssaultPlunder = 17;   // 突击掠夺
+  World_Exterminate = 18;   // 剿灭
+  World_Cooperation = 19;   // 协助
+  World_IncidentReel = 20;   // 打卷轴事件
+  World_Mass = 21;   // 集结
+  World_Dismiss = 22;   // 解散
+  World_Cancel_Mass = 23;   // 取消集结
+  World_SuspendMarch = 24;   // 中止行军
+  World_Explore = 25;   // 探索
+}
+
+enum WorldUnitedEnum{
+  World_United_Pass = 0;
+  World_United_Attack = 1;   // 联军出征
+  World_United_Cancel_Attack = 2;   // 联军撤军
+  World_United_Garrison = 3;   // 联军驻守
+  World_United_Cancel_Garrison = 4;   // 联军取消驻守
+  World_United_Transfer = 5;   // 联军调动
+  World_United_Cancel_Transfer = 6;   // 联军取消调动
+  World_United_Dismiss = 7;   // 联军解散
+  World_United_Single_Dismiss = 8;   // 从联军中撤退
+  World_United_Suspend_March = 9;   // 联军中止中转
+  World_United_AtOnceMarchBack = 10;  // 联军立即返回
+}
+
+
+enum AttrEnum {
+  Attr_pass = 0;
+  Attr_Level = 20;   // 等级
+  Attr_Exp = 21;   // 经验值
+  Attr_Wood = 22;   // 木材
+  Attr_Iron = 23;   // 铁矿
+  Attr_Stone = 24;   // 石料
+  Attr_Forage = 25;   // 粮草
+  Attr_Gold = 26;   // 金币
+  Attr_Diamond = 27;   // 钻石
+  //    Attr_BindDiamond 		= 28;   // 绑定钻石(保留，但不使用)
+  Attr_Decree = 29;   // 政令
+  Attr_ArmyOrder = 30;   // 军令
+  Attr_Power = 31;   // 势力值
+  Attr_Domain = 32;   // 领地个数
+  Attr_Renown = 33;   // 名望值
+  Attr_HeroStrength = 34;   // 英雄体力
+  Attr_RenownLimit = 35;   // 名望值上限
+  Attr_LordLevel = 36;   // 领主的爵位
+  Attr_Fortress = 37;   // 要塞
+  Attr_Feats = 38;   // 武勋
+  Attr_AllyId = 39;   // 同盟ID
+  Attr_AllyPos = 40;   // 同盟职位
+  Attr_BirthPoint = 41;   // 出生点
+  Attr_Energy = 42;   // 精力
+  Attr_NormalSection = 43;   // 普通战役关卡
+  Attr_SpecialSection = 44;   // 精英战役关卡
+  Attr_MasterAllyId = 45;   // 上司同盟ID
+  Attr_ConscriptSpeed = 46;   // 征兵加速值
+  Attr_ConscriptSpeedLimit = 47;   // 征兵加速值上限
+  Attr_CityMasterIndex = 51;   // 城主府地块ID
+  Attr_WorldTrenDistance = 52;   // 天下大事行军距离
+  Attr_WorldTrenGarrison = 53;   // 天下大事驻守功能
+  Attr_MapExploreDailyTimes = 61; // 大地图每日探索次数
+  Attr_NextMapExploreStamp = 62; // 下次大地图探索时间戳
+}
+
+message ActivityInfo {
+  int32 averagePower = 1;         // 平均势力值
+  int32 isGetPowerAward = 2;      // 保底奖励是否领取（0：未领取 1：已领取）
+  int32 spaceRiftGetStamp = 3;    // 空间裂缝领取时间戳
+  int32 isGetSpaceRift = 4;       // 空间裂缝是否领取（0：未领取 1：已领取）
+  repeated SurveyInfo surveyList = 5; // 问卷调查列表
+  repeated RookieInfo rookieList = 6; // 新手效果列表
+}
+
+message SurveyInfo {
+  int32 questionId = 1;
+  int32 state = 2;        // 0为未领取，1为领取
+}
+
+message RookieInfo {
+  int32 rookieId = 1;     // 新手效果id
+  int32 count = 2;        // 已经使用次数
+}
+
+message GrowthFundInfo {
+  int32 growthFundId = 1;
+  int32 state = 2;        // 0为未领取，1为领取
+}
+
+message RechargeLimitInfo {
+  int32 rechargeLimitId = 1;  // 充值道具id
+  int32 count = 2;            // 充值次数
+}
+
+message SystemTips {
+  int32 systemTipsType = 1;
+  repeated int32 id = 2;
+}
+
+message BindInfo {
+  int32 bindType = 1;
+  int32 isBind = 2;
+  string accountName = 3;
+}
+
+message OtherInfo {
+  repeated SystemTips tips = 1;
+  repeated BindInfo binds = 2;
+  repeated DialogInfo dialogInfoList = 3;     // 弹窗信息
+}
+
+// 玩家资源变化
+message AttrChange {
+  AttrEnum key = 1;
+  int32 value = 2;
+}
+
+message DispelInfo {
+  int32 userId = 1;                   // 玩家id
+  int32 beginDispelStamp = 2;         // 开始驱散地块的时间戳
+  int32 dispelLandId = 3;             // 驱散中的地块id
+  int32 birthPoint = 4;               // 玩家出生点
+  repeated int32 alreadyDispels = 5;  // 已经驱散的地块
+}
+
+enum AppointEnum {
+  Appoint_Nominate = 0;  // 任命
+  Appoint_Recall = 1;  // 罢免
+}
+
+enum RecruitEnum{
+  Recruit_AD = 0;    // 看广告招募
+  Recruit_Diamonds = 1;    // 钻石招募
+  Recruit_Free = 2;    // 免费招募
+}
+
+enum ResidentBirthEnum{
+  Birth_In = 0;    // 移入
+  Birth_Out = 1;    // 移除
+}
+
+enum KickTypeEnum{
+  KickType_RepeatLogin = 0;    // 重复登录
+  KickType_GM = 1;    // GM工具
+  KickType_Ban = 2;    // 封号
+}
+
+message ResourceType {
+  AttrEnum key = 1;
+  int32 value = 2;
+}
+
+enum CommonRewardEnum {
+  RewardFlagBegin = 0;
+  RewardFlagFacebook = 1;    // facebook礼包
+  RewardFlagInstagram = 2;    // instagram礼包
+  RewardFlagTwitter = 3;    // twitter礼包
+  RewardFlagFirstRecharge = 4;    // 首充奖励
+  RewardFlagFirstJoinAlly = 5;    // 首次入盟（加入/创建）
+  RewardFlagBindMail = 6;    // 绑定邮件
+  RewardFlagBindFb = 7;    // 绑定Facebook
+  RewardFlagBindGoogle = 8;    // 绑定Google Play
+}
+
+enum SearchUserType {
+  UserName = 0;    // 玩家名字
+  UserId = 1;    // 玩家id
+}
+
+enum WarMailType {
+  WarTypeAll = 0;    // 所有
+  WarTypeSection = 1;    // 关卡战报
+  WarTypeWarfare = 2;    // 战争战报（打地、打人、侦察等等）
+}
+
+// 战略类型
+enum StrategyType {
+  AllStrategy = 0;    // 所有的战略
+  // 发展类
+  UrgentCollection = 1; // 紧急采集
+  ActionResume = 2; // 行动恢复(大地图)
+  StrengthResume = 3; // 体力恢复(副本)
+  // 战争类
+  UrgentCallBack = 4; // 紧急召回
+  AssaultPlunder = 5; // 突击掠夺
+  EntireNationInArms = 6; // 全民皆兵
+  ForceConscript = 7; // 强制征兵
+  UrgentBuild = 8; // 紧急建造
+  SoulCall = 9; // 英灵召唤
+  UrgentHelp = 10; // 紧急援助
+  // 辅助类
+  MoveCity = 11; // 迁城
+  StickToCity = 12; // 坚守
+  Stray = 13; // 流浪
+  WallRepair = 14; // 城墙快修
+  RapidMarch = 15; // 急行军
+  Revive = 16; // 起死回生
+}
+
+enum RedEnum {
+  war_mail = 0;   // 玩家战报红点总数
+  normal_mail = 1;   // 普通邮件红点总数
+  section_mail = 2;   // 关卡战报红点总数
+  card_bag = 3;   // 英雄令卡包红点
+}
+
+enum LandStateEnum {
+  Pass = 0;      // 无状态
+  LandStateGiveUp = 100;    // 放弃地块
+  LandStateCreate = 101;    // 创建建筑(要塞和传送门等)
+  LandStateDismantle = 102;    // 拆除建筑(要塞和传送门等)
+  LandStateUpgrade = 103;    // 升级建筑(要塞和传送门等)
+  LandStateStickToCity = 104;    // 玩家战略坚守
+  LandStateRookie = 105;    // 新手保护
+}
+
+enum NotificationEnum {
+  NotificationScience = 0;            // 科技
+  NotificationBuilding = 1;           // 建筑
+  NotificationStrategy = 2;           // 战略大厅
+  NotificationArmy = 3;               // 军团
+  NotificationIncident = 4;           // 事件
+  NotificationRecruitHero = 5;        // 招募英雄
+  NotificationRecruitResident = 6;    // 招募居民
+  NotificationWarWarning = 7;         // 战斗预警
+  NotificationBattle = 8;             // 战斗
+  NotificationAllyCommand = 9;        // 同盟指挥
+}
+
+// 什么弹窗
+enum DialogEnum {
+  DialogPass = 0;                     //
+  DialogUserProtocol = 1;             // 用户协议
+  DialogScore = 2;                    // 评分系统
+}
+
+// 弹窗触发点
+enum DialogTargetEnum {
+  DialogTargetPass = 0;               //
+  DialogTargetLordUpLv3 = 1;          // 领主等级升级到精英骑士
+  DialogTargetSignAward3 = 2;         // 领取完第3天签到
+  DialogTargetSignAward14 = 3;        // 领取完第14天签到
+}
+
+// 弹窗信息
+message DialogInfo {
+  DialogEnum dialogType = 1;                      // 弹窗类型
+  repeated DialogTargetEnum dialogTargets = 2;    // 弹窗触发点
+}
+*/
+
+enum ProtoCmd {
+  CMD_PASS = 0;
+  CMD_ErrResp = 1;
+  CMD_HeartBeatReq = 2;
+  CMD_HeartBeatResp = 3;
+  CMD_LoginReq = 1001;
+  CMD_LoginResp = 1002;
+  CMD_LogoutReq = 1003;
+  CMD_LogoutResp = 1004; // 退出返回
+
+  CMD_SetPhotoReq = 7027; // 请求设置头像
+  CMD_SetPhotoResp = 7028; // 设置头像返回
+  CMD_SetBorderReq = 7031; // 请求设置边框
+  CMD_SetBorderResp = 7032; // 设置边框返回
+
+  CMD_FrameSyncReq = 10000; //
+  CMD_FrameSyncResp = 10001; //
+
+  CMD_EnterMatchReq = 10002;          // 客户端点匹配
+  CMD_EnterRoomResp = 10003;          // 进入房间成功后,返回出生点
+  CMD_FinishMissionReq = 10004;       // 任务达成
+  CMD_FinishMissionResp = 10005;      // 返回已完成任务点位置
+  CMD_TotalScoreResp = 10006;         // 总分数返回
+  CMD_BeginGameResp = 10007;          // 开始游戏返回
+  CMD_StartVoteReq = 10008;           // 发起投票请求
+  CMD_StartVoteResp = 10009;          // 发起投票返回
+  CMD_PlayerVoteReq = 10010;          // 玩家投票
+  CMD_PlayerVoteResp = 10011;         // 玩家投票返回
+  CMD_VoteResultResp = 10012;         // 投票结果
+  CMD_DropItemResp = 10013;           // 掉落道具下发
+  CMD_NinjaAttackReq = 10014;         // 忍者攻击
+  CMD_UseItemReq = 10015;             // 使用道具请求
+  CMD_UseItemResp = 10016;            // 使用道具返回
+  CMD_RoomInfoResp = 10017;           // 房间信息返回
+  CMD_PlayerExitResp = 10018;         // 玩家退出返回
+  CMD_GameEndResp = 10019;            // 游戏结束-返回
+  CMD_HisFSPFrameResp = 10020;        // 历史帧数据返回
+  CMD_PlayerExitReq = 10021;          // 玩家退出请求
+  CMD_UrgencyTaskReq = 10022;         // 紧急任务请求
+  CMD_UrgencyTaskResp = 10023;        // 紧急任务返回
+  CMD_FinishUrgencyTaskReq = 10024;   // 完成紧急任务请求
+  CMD_FinishUrgencyTaskResp = 10025;  // 完成紧急任务返回
+  CMD_NinjaAttackResp = 10026;        // 攻击返回
+  CMD_ChoiceItemReq = 10027;          // 选择道具请求
+  CMD_ChoiceItemResp = 10028;         // 选择道具返回
+  CMD_GameChatReq = 10029;            // 游戏内发送聊天信息
+  CMD_GameChatResp = 10030;           // 游戏内聊天信息返回
+  CMD_UserPageReq = 10031;            // 用户界面请求
+  CMD_UserInfoResp = 10032;           // 玩家等级数据返回
+  CMD_UserArchiveResp = 10033;        // 成就返回
+  CMD_GetArchiveReq = 10034;          // 领取成就 
+  CMD_GetArchiveResp = 10035;         // 领取成就返回
+  CMD_UserTitleResp = 10036;          // 称号请求返回
+  CMD_UseTitleReq = 10037;            // 使用称号  返回为通用的返回 CMD_OkIDResp
+  CMD_UseTitleResp = 10038;           // 使用称号返回
+  CMD_UserNewGotTitleResp = 10039;    // 获得新的称号返回
+  CMD_UserSkinResp = 10040;           // 皮肤返回
+  CMD_UseSkinReq = 10041;             // 使用皮肤  返回为通用的返回 CMD_OkIDResp
+  CMD_UseSkinResp = 10042;            // 使用皮肤
+  CMD_UserMailResp = 10043;           // 邮件返回
+  CMD_UserReadMailReq = 10044;        // 阅读邮件
+  CMD_UserReadMailResp = 10045;       // 阅读邮件返回
+  CMD_CloseDoorReq = 10046;           // 关门请求
+  CMD_CloseDoorResp = 10047;          // 关门返回
+  CMD_ItemsResp = 10048;              // 道具返回
+  CMD_StoreReq = 10049;               // 商店请求
+  CMD_StoreResp = 10050;              // 商店返回
+  CMD_OpenBoxReq = 10051;             // 开宝箱请求
+  CMD_OpenBoxResp = 10052;            // 开宝箱返回
+  CMD_FreeItemReq = 10053;            // 免费金币请求
+  CMD_FreeItemResp = 10054;           // 免费金币返回
+  CMD_BuyItemsReq = 10055;            // 购买道具请求
+  CMD_BuyItemsResp = 10056;           // 购买道具返回
+  CMD_RedPointResp = 10057;           // 红点返回
+  CMD_HomeChatReq = 10058;            // 世界聊天
+  CMD_HomeChatResp = 10059;           // 主页聊天返回
+  CMD_GetNinjaGiftReq = 10060;        // 忍者礼包请求
+  CMD_GetNinjaGiftResp = 10061;       // 忍者礼包返回
+  CMD_QualfyChangeResp = 10062;       // 赛季变更奖励
+  CMD_NewRankResp = 10063;            // 最新段位信息返回
+  CMD_SellItemReq = 10064;            // 出售道具请求
+  CMD_SellItemResp = 10065;           // 出售道具返回
+  CMD_GmChatReq = 10066;              // GMChat请求
+  CMD_GmChatResp = 10067;             // GMChat请求返回
+  CMD_UnlockSkinReq = 10070;          // 皮肤碎片
+  CMD_UnlockSkinResp = 10071;         // 皮肤碎片
+  CMD_RandNameReq = 10072;            // 随机名字请求
+  CMD_RandNameResp = 10073;           // 随机名字请求返回
+  CMD_CreateUserReq = 10074;          // 创建角色
+  CMD_CreateUserResp = 10075;         // 创建角色返回
+  CMD_RegisterReq = 10076;            // 注册
+  CMD_RegisterResp = 10077;           // 注册返回
+  CMD_AuctionReq = 10078;             // 竞拍请求
+  CMD_AuctionResp = 10079;            // 竞拍返回
+  CMD_VoteCloseResp = 10080;          // 投票票关闭返回
+  CMD_VoteStepResp = 10081;           // 投票状态返回
+  CMD_UseLuckyCardReq = 10082;        // 使用幸运卡请求
+  CMD_UseLuckyCardResp = 10083;       // 使用幸运卡返回
+  CMD_GameDetailResp = 10084;         // 广播结算返回
+  CMD_CommonTextNoticeResp = 10085;   // 公用文字提示
+  CMD_UseBagItemReq = 10086;          // 使用背包道具请求
+  CMD_UseBagItemResp = 10087;         // 使用背包道具返回
+  CMD_WaitGameChatReq = 10088;        // 候场游戏内发送聊天信息
+  CMD_WaitGameChatResp = 10089;       // 候场游戏内聊天信息返回
+  CMD_EnterMatchErrorResp = 10090;    // 匹配失败返回
+  CMD_NewGuideReq = 10091;            // 新手引导请求
+  CMD_NewGuideResp = 10092;           // 新手引导响应
+  CMD_FreshGiftResp = 10093;          // 新手礼包一
+  CMD_FreshEndTimeResp = 10094;       // 新手倒计时礼包
+  CMD_GetFreshGiftReq = 10095;        // 领取新手礼包
+  CMD_GetFreshGiftResp = 10096;       // 领取新手礼包返回
+  CMD_ModifyNameReq = 10097;          // 修改角色名请求
+  CMD_ModifyNameResp = 10098;         // 修改角色名响应
+  CMD_OpenWindReq = 10099;            // 通风口请求
+  CMD_OpenWindResp = 10100;           // 通风口返回
+  CMD_TopBoardReq = 10101;            // 排行榜请求
+  CMD_TopBoardResp = 10102;           // 排行榜请求返回
+  CMD_UserTopReq = 10103;             // 玩家信息请求
+  CMD_UserTopResp = 10104;            // 玩家信息请求返回
+  CMD_LampSwitchReq = 10105;          // 玩家监控室请求
+  CMD_LampSwitchResp = 10106;          // 玩家监控室请求返回
+}
+
+enum LanguageEnum {
+  Non = 0;   //
+  ChineseSimple = 1;   // 简体中文
+  ChineseTraditional = 2;   // 繁体中文
+  English = 3;   // 英文
+}
+// 前1000为公用错误码, 错误码按每个proto划分， 每个proto分配1000个错误码
+// 命名： Error+proto名+错误原因
+enum ErrEnum {
+  Error_Invalid = 0;                  // 默认值无效
+  Error_Pass = 1;                     // 成功
+  Error_Operation_Fail = 2;           // 操作失败
+  Error_Gold_Not_Enough = 3;          // 金币不足
+  Error_Ad_Not_Enough = 4;            // 广告次数不足
+  Error_GemStore_Not_Enough = 5;      // 宝石不足
+  Error_MysSkin_Times_Not_Enough = 6; // 神秘皮肤次数不足
+  Error_NotGet = 7;                   // 未获得XX
+  Error_ExistName = 8;                // 名字已经存在
+  Error_RegisterFailed = 9;           // 注册失败
+  Error_LogoutOther = 10;             // 其他地方登录
+  Error_Goods_NotExists = 11;         // 物品不存在
+  Error_ConfigId_NotExists = 12;      // 配置表id不存在
+  Error_UserName_Exists = 13;         // 角色名已存在
+  Error_Involving_SenWord = 14;       // 涉及敏感词
+  Error_Username_OutLen = 15;         // 用户名超过8个
+  Error_System_busy = 16;             // 当前系统繁忙，请稍后在匹配
+}
+
+enum UserPageEnum {
+  invalid_page = 0; // 无效页面
+  skin_page = 1;    // 皮肤
+  title_page = 2;   // 称号
+  archive_page = 3; // 成就
+  home_page = 4;    // 主页
+  mail_page = 5;    // 邮件
+}
+
+enum TopBoardEnum {
+  invalid_top = 0; // 无效
+  rank_top = 1;    // 段位
+  buddy_top = 2;   // 好友
+  rage_top = 3;    // 人气
+}
+
+enum DetailTypeEnum {
+  invalid_type = 0;     // 无效类型
+  key_text = 1;         // key文本，客户端需转义
+  full_server_text = 2; // 全服邮件内容，客户端不需要转义
+}
+
+enum MailEnum {
+  mail_pass = 0;
+  mail_read = 1;        // 打开邮件详情
+  mail_getone = 2;      // 领取单个邮件奖励
+  mail_getall = 3;      // 一键领取邮件奖励
+  mail_delallread = 4;  // 删除全部已读
+}
+
+enum RedPointEnum {
+  red_pass = 0;
+  mail_red = 1;
+  skin_red = 2;
+  title_red = 3;
+  archive_red = 4;
+  store_red = 5;
+  items_red = 6;
+}
+
+enum ChatTypeEnum {
+  chat_system = 0;   // 系统公告
+  chat_merge = 1;    // 综合聊天
+  chat_lantern = 2;  // 走马灯
+  chat_gm = 3;       // gm 命令
+}
+
+enum ItemTypeEnum {
+  item_pass = 0;
+  prop_item = 1;        // 道具
+  gold_item = 2;        // 货币-一般金币
+  choice_prop_item = 3; // 选择性道具
+  skin_item = 4;        // 皮肤
+}
+
+enum RegisterTypeEnum {
+  register_nomal = 0;
+  register_quick = 1;
+}
+
+enum VoteTypeEnum {
+  normal_vote = 0; // 正常报警
+  urgent_vote = 1; // 紧急会议
+}
